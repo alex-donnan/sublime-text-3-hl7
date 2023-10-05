@@ -185,6 +185,7 @@ class hl7inspectorCommand(sublime_plugin.TextCommand):
 			if (segmentItem.code == fields[0]):
 				header = segmentItem.code + " - " + segmentItem.description
 				segmentCode = segmentItem.code
+				segmentFields = segmentItem.fields
 
 
 		header = '<b style="color:#33ccff;">' + header + '</b>'
@@ -216,7 +217,7 @@ class hl7inspectorCommand(sublime_plugin.TextCommand):
 										filler = "&gt;"
 										subComponent = re.sub(regex, filler, subComponent)
 			
-										body = body + '<br>' + str(fieldId) + "." + str(componentId) + "."+ str(subComponentId) + " - " + subComponent
+										body = body + '<br>' + str(fieldId) + "." + str(componentId) + "." + str(subComponentId) + " - " + subComponent
 
 
 									subComponentId = subComponentId + 1
@@ -237,18 +238,21 @@ class hl7inspectorCommand(sublime_plugin.TextCommand):
 								till = re.compile(r'(?<!\\)(?:\\\\)*~').split(component)
 
 								if segmentCode == 'MSH' and fieldId > 1:
-									
 									fieldCounter = fieldId + 1
 								else:
 									fieldCounter = fieldId
-
 
 								if(totalCircunflex > 0):
 									for tillItem in till:
 										body = body + '<br>' + str(fieldCounter) + "." + str(componentId) + " - " + tillItem
 								else:
+									if segmentFields[fieldCounter]:
+										fieldName = segmentFields[fieldCounter]
+									else:
+										fieldName = ""
+
 									for tillItem in till:
-										body = body + '<br>' + str(fieldCounter) + " - " + tillItem
+										body = body + '<br>' + str(fieldCounter) + " - " + fieldName + " - " + tillItem
 
 						componentId = componentId + 1
 
