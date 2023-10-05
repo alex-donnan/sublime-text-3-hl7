@@ -216,7 +216,7 @@ class hl7inspectorCommand(sublime_plugin.TextCommand):
 										except:
 											fieldName = ""
 			
-										if fieldCounter > 0:
+										if fieldId > 0:
 											body = body + '<br>' + str(fieldId) + "." + str(componentId) + "." + str(subComponentId) + " - " + fieldName + " - " + subComponent
 
 									subComponentId = subComponentId + 1
