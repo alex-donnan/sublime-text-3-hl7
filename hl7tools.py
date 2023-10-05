@@ -216,8 +216,8 @@ class hl7inspectorCommand(sublime_plugin.TextCommand):
 										except:
 											fieldName = ""
 			
-										body = body + '<br>' + str(fieldId) + "." + str(componentId) + "." + str(subComponentId) + " - " + fieldName + " - " + subComponent
-
+										if fieldCounter > 0:
+											body = body + '<br>' + str(fieldId) + "." + str(componentId) + "." + str(subComponentId) + " - " + fieldName + " - " + subComponent
 
 									subComponentId = subComponentId + 1
 
@@ -242,16 +242,17 @@ class hl7inspectorCommand(sublime_plugin.TextCommand):
 									fieldCounter = fieldId
 
 								try:
-									fieldName = segmentFields[fieldId-1]
+									fieldName = segmentFields[fieldCounter-1]
 								except:
 									fieldName = ""
 
-								if(totalCircunflex > 0):
-									for tillItem in till:
-										body = body + '<br>' + str(fieldCounter) + "." + str(componentId) + " - " + fieldName + " - " + tillItem
-								else:
-									for tillItem in till:
-										body = body + '<br>' + str(fieldCounter) + " - " + fieldName + " - " + tillItem
+								if fieldCounter > 0:
+									if(totalCircunflex > 0):
+										for tillItem in till:
+											body = body + '<br>' + str(fieldCounter) + "." + str(componentId) + " - " + fieldName + " - " + tillItem
+									else:
+										for tillItem in till:
+											body = body + '<br>' + str(fieldCounter) + " - " + fieldName + " - " + tillItem
 
 						componentId = componentId + 1
 
