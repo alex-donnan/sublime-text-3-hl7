@@ -180,8 +180,7 @@ class hl7inspectorCommand(sublime_plugin.TextCommand):
 			if (segmentItem.code == fields[0]):
 				header = segmentItem.code + " - " + segmentItem.description
 				segmentCode = segmentItem.code
-				segmentFields = segmentItem.fields
-
+				segmentFields = segmentItem.fields["fields"]
 
 		header = '<b style="color:#33ccff;">' + header + '</b>'
 
@@ -213,7 +212,7 @@ class hl7inspectorCommand(sublime_plugin.TextCommand):
 										subComponent = re.sub(regex, filler, subComponent)
 
 										try:
-											fieldName = segmentFields.fields[fieldId]
+											fieldName = segmentFields[fieldId-1]
 										except:
 											fieldName = ""
 			
@@ -243,7 +242,7 @@ class hl7inspectorCommand(sublime_plugin.TextCommand):
 									fieldCounter = fieldId
 
 								try:
-									fieldName = segmentFields.fields[fieldCounter]
+									fieldName = segmentFields[fieldId-1]
 								except:
 									fieldName = ""
 
