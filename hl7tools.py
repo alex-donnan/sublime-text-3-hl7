@@ -148,7 +148,7 @@ class hl7searchCommand(sublime_plugin.WindowCommand):
 			codeWithoutCircunflex = re.sub(regex, filler, selectionText)
 
 			if (eventItem.code == codeWithoutCircunflex):
-				URL = URL + "TriggerEvent/" + eventItem.code
+				URL = URL + "TriggerEvents/" + eventItem.code
 				isValid = 1
 
 		for segmentItem in hl7SegmentList:
