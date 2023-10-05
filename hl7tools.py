@@ -6,11 +6,9 @@ from .lib.hl7Event import *
 from .lib.hl7Segment import *
 from .lib.hl7TextUtils import *
 
-
-
 hl7EventList = hl7Event("","")
 hl7EventList = hl7EventList.loadEventList()
-hl7SegmentList = hl7Segment("","")
+hl7SegmentList = hl7Segment("","",{})
 hl7SegmentList = hl7SegmentList.loadSegmentList()
 
 STATUS_BAR_HL7 = 'StatusBarHL7'
@@ -73,9 +71,6 @@ class selectionModifiedListener(sublime_plugin.EventListener):
 		else:
 			#sublime.status_message('')
 			view.erase_status(STATUS_BAR_HL7)
-
-
-
 
 # Double click on keywords (segments / events)
 class doubleClickKeywordListener(sublime_plugin.EventListener):
@@ -246,9 +241,9 @@ class hl7inspectorCommand(sublime_plugin.TextCommand):
 									for tillItem in till:
 										body = body + '<br>' + str(fieldCounter) + "." + str(componentId) + " - " + tillItem
 								else:
-									if segmentFields[fieldCounter]:
+									try:
 										fieldName = segmentFields[fieldCounter]
-									else:
+									except:
 										fieldName = ""
 
 									for tillItem in till:
