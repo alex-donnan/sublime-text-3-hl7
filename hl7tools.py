@@ -138,7 +138,7 @@ class hl7searchCommand(sublime_plugin.WindowCommand):
 
 		isValid = 0
 
-		URL = "http://hl7-definition.caristix.com:9010/HL7%20v2.5.1/Default.aspx?version=HL7 v2.5.1&"
+		URL = "http://hl7-definition.caristix.com/v2/HL7v2.5.1/TriggerEvents/"
 
 
 		for eventItem in hl7EventList:
