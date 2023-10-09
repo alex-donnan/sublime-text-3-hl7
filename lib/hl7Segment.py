@@ -22,9 +22,9 @@ class hl7Segment(object):
 		try:
 			file_check = sublime.find_resources(version + '.json')
 			if len(file_check) > 0:
-				print(file_check)
 				file = open(file_check[0], 'r')
 				all_fields = json.load(file)
+				print(all_fields)
 				self.fields = all_fields[self.code]
 		except:
 			pass
