@@ -16,12 +16,12 @@ class hl7Segment(object):
 	def loadSegmentDefinition(self, version):
 		import json
 
-		with open('./definitions/' + version + '.json') as file:
-			all_fields = json.load(file)
-			try:
-				self.fields = all_fields[self.code]
-			except:
-				pass
+		file = open('./definitions/' + version + '.json', 'r')
+		all_fields = json.load(file)
+		try:
+			self.fields = all_fields[self.code]
+		except:
+			pass
 
 	# Loads the entire segment list
 	def loadSegmentList(self, version = "2.5.1"):
