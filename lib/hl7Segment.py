@@ -4,7 +4,7 @@ class hl7Segment(object):
 		self.code = code
 		self.description = description
 		self.fields = {
-			fields: []
+			'fields': []
 		}
 
 	# Gets a segment object based on his code. If no object is found in the segmentList with the following code None is returned.
