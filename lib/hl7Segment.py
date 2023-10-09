@@ -3,7 +3,9 @@ class hl7Segment(object):
 	def __init__(self, code, description):
 		self.code = code
 		self.description = description
-		self.fields = {}
+		self.fields = {
+			fields: []
+		}
 
 	# Gets a segment object based on his code. If no object is found in the segmentList with the following code None is returned.
 	def getSegmentByCode(self, code, segmentList):

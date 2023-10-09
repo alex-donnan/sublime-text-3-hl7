@@ -152,7 +152,6 @@ class hl7inspectorCommand(sublime_plugin.TextCommand):
 
 		for segmentItem in hl7SegmentList:
 			if segmentItem.code == fields[0]:
-				print(segmentItem)
 				header = segmentItem.code + " - " + segmentItem.description
 				segmentCode = segmentItem.code
 				segmentFields = segmentItem.fields['fields']
