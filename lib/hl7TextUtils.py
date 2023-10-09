@@ -7,7 +7,6 @@ import re
 def getLineAtCursorPosition(self, view):
 	return (view.substr(view.line(view.sel()[0])))
 
-
 # Gets the text of the line from the beginning to the cursor position
 def getLineTextBeforeCursorPosition(self, view, sublime):
 	pt = ''
@@ -15,7 +14,6 @@ def getLineTextBeforeCursorPosition(self, view, sublime):
 	sels = view.sel()
 	for s in sels:
 		pt += " " + str(s.begin())
-
 
 	region1 = sublime.Region(0, int(pt))
 	selectionText = view.substr(region1)
@@ -28,7 +26,6 @@ def getLineTextBeforeCursorPosition(self, view, sublime):
 			line = ''
 
 	return line
-
 
 # Gets the entire field at cursor positon
 def getFieldAtCursorPosition(self, view, sublime):
@@ -53,9 +50,6 @@ def getComponentAtCursorPosition(self, view, sublime):
 
 	return parcialComponentList[parcialComponentCounter-1]
 
-
-
-
 # Check if a field has components
 def fieldHasComponents(self, field):
 	componentsList = re.split(r'(?<!\\)(?:\\\\)*\^', field)
@@ -64,7 +58,6 @@ def fieldHasComponents(self, field):
 	else:
 		return False
 
-
 # Check if a field has sub-components
 def fieldHasSubComponents(self, field):
 	subComponentsList = re.split(r'(?<!\\)(?:\\\\)*\&', field)
@@ -72,4 +65,3 @@ def fieldHasSubComponents(self, field):
 		return True
 	else:
 		return False
-

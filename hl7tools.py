@@ -16,20 +16,12 @@ STATUS_BAR_HL7 = 'StatusBarHL7'
 # On selection modified it will update the status bar
 class selectionModifiedListener(sublime_plugin.EventListener):
 	def on_selection_modified(self, view):
-
-
 		line = getLineTextBeforeCursorPosition(self, view, sublime)
 		fullLine = getLineAtCursorPosition(self, view)
-
-		# Get the first 3 letters of the line
 		segment = fullLine[:3]
 
-		
 		if hl7Segment.getSegmentByCode(self, segment, hl7SegmentList) != None:
-
 			statusBarText = '[ ' + segment + ' '
-
-
 			fieldList = re.split(r'(?<!\\)(?:\\\\)*\|', line)
 			fieldCounter = len(fieldList)
 
@@ -40,7 +32,6 @@ class selectionModifiedListener(sublime_plugin.EventListener):
 
 			isComponentRequired = False
 			isSubComponentRequired = False
-
 			fullField = getFieldAtCursorPosition(self, view, sublime)
 			
 			# Level of detail required
@@ -63,22 +54,17 @@ class selectionModifiedListener(sublime_plugin.EventListener):
 				subComponentCounter = len(subComponentList)
 				statusBarText += '.' + str(subComponentCounter)
 
-
 			statusBarText += ' ]' 
-			#sublime.status_message('\t' + statusBarText + ' '*20)
 			view.set_status(STATUS_BAR_HL7, statusBarText)
 
 		else:
-			#sublime.status_message('')
 			view.erase_status(STATUS_BAR_HL7)
 
 # Double click on keywords (segments / events)
 class doubleClickKeywordListener(sublime_plugin.EventListener):
-
 	def on_text_command(self, view, cmd, args):
 		if cmd == 'drag_select' and 'event' in args:
 			event = args['event']
-
 			isEvent = True
 			pt = view.window_to_text((event['x'], event['y']))
 			text = []
@@ -89,13 +75,11 @@ class doubleClickKeywordListener(sublime_plugin.EventListener):
 					print(view.substr(view.word(region)))
 
 					if region.empty():
-
 						text.append(view.substr(view.word(region)))
 
 						def asyncMessagePopup():
 							desc = ""
 							for eventItem in hl7EventList:
-
 								regex = "(\^)"
 								filler = "_"
 								codeWithoutCircunflex = re.sub(regex, filler, text[0])
@@ -104,7 +88,6 @@ class doubleClickKeywordListener(sublime_plugin.EventListener):
 									desc = eventItem.description
 
 							for segmentItem in hl7SegmentList:
-
 								regex = "(\^)"
 								filler = "_"
 								codeWithoutCircunflex = re.sub(regex, filler, text[0])
@@ -130,14 +113,10 @@ class hl7searchCommand(sublime_plugin.WindowCommand):
 		sel = view.sel()
 		region1 = sel[0]
 		selectionText = view.substr(region1)
-
 		isValid = 0
-
 		URL = "http://hl7-definition.caristix.com/v2/HL7v2.5.1/"
 
-
 		for eventItem in hl7EventList:
-
 			regex = "(\^)"
 			filler = "_"
 			codeWithoutCircunflex = re.sub(regex, filler, selectionText)
@@ -150,7 +129,6 @@ class hl7searchCommand(sublime_plugin.WindowCommand):
 			if (segmentItem.code == selectionText):
 				URL = URL + "Segments/" + segmentItem.code
 				isValid = 1
-
 
 		if (isValid == 1):
 			webbrowser.open_new(URL)
@@ -166,12 +144,8 @@ class hl7inspectorCommand(sublime_plugin.TextCommand):
 
 		#Segment
 		selectedSegment = self.view.substr(self.view.line(self.view.sel()[0]))
-
-
 		fields = selectedSegment.split('|')
 		fields = re.split(r'(?<!\\)(?:\\\\)*\|', selectedSegment)
-
-
 		fieldId = 0
 		componentId = 1
 		subComponentId = 1
@@ -190,50 +164,44 @@ class hl7inspectorCommand(sublime_plugin.TextCommand):
 
 				if(field != "^~\&"):
 					components =  re.compile(r'(?<!\\)(?:\\\\)*\^').split(field)
-
 					totalCircunflex = field.count("^")
 
 					for component in components:
 						if(component != ""):
-
 							subComponents =  re.compile(r'(?<!\\)(?:\\\\)*&').split(component)
 
 							if(len(subComponents) > 1):
 
 								for subComponent in subComponents:
-									if(subComponent != ""):
 
+									if(subComponent != ""):
 										regex = "(<)"
 										filler = "&lt;"
 										subComponent = re.sub(regex, filler, subComponent)
-			
 										regex = "(>)"
 										filler = "&gt;"
 										subComponent = re.sub(regex, filler, subComponent)
 
 										try:
-											fieldName = segmentFields[fieldId-1]
+											fieldName = segmentFields[fieldId-1]['desc']
 										except:
 											fieldName = ""
 			
 										if fieldId > 0:
-											body = body + '<br>' + str(fieldId) + "." + str(componentId) + "." + str(subComponentId) + " - " + fieldName + " - " + subComponent
+											if segmentFields[fieldId-1].get('fields'):
+												fieldName = segmentFields[fieldId-1]['fields'][componentId]
+											body = body + '<br>' + str(fieldId) + "." + str(componentId) + " : " + fieldName + "(" + str(subComponentId) + ") - " + subComponent
 
 									subComponentId = subComponentId + 1
-
 								subComponentId = 1
 
-
 							else: 
-
 								regex = "(<)"
 								filler = "&lt;"
 								component = re.sub(regex, filler, component)
-	
 								regex = "(>)"
 								filler = "&gt;"
 								component = re.sub(regex, filler, component)
-	
 								till = re.compile(r'(?<!\\)(?:\\\\)*~').split(component)
 
 								if segmentCode == 'MSH' and fieldId > 1:
@@ -242,20 +210,21 @@ class hl7inspectorCommand(sublime_plugin.TextCommand):
 									fieldCounter = fieldId
 
 								try:
-									fieldName = segmentFields[fieldCounter-1]
+									fieldName = segmentFields[fieldCounter-1]['desc']
 								except:
 									fieldName = ""
 
 								if fieldCounter > 0:
-									if(totalCircunflex > 0):
+									if totalCircunflex > 0:
 										for tillItem in till:
-											body = body + '<br>' + str(fieldCounter) + "." + str(componentId) + " - " + fieldName + " - " + tillItem
+											if segmentFields[fieldCounter-1].get('fields'):
+												fieldName = segmentFields[fieldCounter-1]['fields'][componentId]
+											body = body + '<br>' + str(fieldCounter) + "." + str(componentId) + " : " + fieldName + " - " + tillItem
 									else:
 										for tillItem in till:
-											body = body + '<br>' + str(fieldCounter) + " - " + fieldName + " - " + tillItem
+											body = body + '<br>' + str(fieldCounter) + " : " + fieldName + " - " + tillItem
 
 						componentId = componentId + 1
-
 					componentId = 1
 
 				else:
@@ -266,7 +235,6 @@ class hl7inspectorCommand(sublime_plugin.TextCommand):
 						body = body + '<br>' + str(2) + " - " + fields[1] + "\n"
 
 			fieldId = fieldId + 1
-
 		message = header + body
 		message = message.replace("\&", "\&amp;")
 
@@ -276,7 +244,6 @@ class hl7inspectorCommand(sublime_plugin.TextCommand):
 # Cleans an HL7 message from reduntant information and idents it
 class hl7cleanerCommand(sublime_plugin.TextCommand):
 	def run(self, edit):
-
 		content = self.view.substr(sublime.Region(0, self.view.size()))
 
 		for segmentItem in hl7SegmentList:
@@ -317,7 +284,6 @@ class hl7cleanerCommand(sublime_plugin.TextCommand):
 		filler = "\n"
 		content = re.sub(regex, filler, content)
 
-
 		#last two ^M at the end of content followed by new line with empty space before
 		content = re.sub("(\^M\^\\\\\^M)\ {1,}\n", "\n", content)
 		
@@ -348,7 +314,5 @@ class hl7cleanerCommand(sublime_plugin.TextCommand):
 		
 		#blank spaces at the beginning of the text
 		content = re.sub("^ {1,}", "", content)
-		
-
 
 		self.view.insert(edit, 0, content + "\n\n\n")

@@ -1,0 +1,4632 @@
+{
+  "ACC": {
+    "fields": [
+      {
+        "desc": "Accident date / time",
+        "fields": [
+          "Time Of An Event",
+          "Degree Of Precision"
+        ]
+      },
+      {
+        "desc": "Accident code"
+      },
+      {
+        "desc": "Accident location"
+      }
+    ]
+  },
+  "ADD": {
+    "fields": [
+      {
+        "desc": "Addendum Continuation Pointer"
+      }
+    ]
+  },
+  "AL1": {
+    "fields": [
+      {
+        "desc": "Set ID - Allergy"
+      },
+      {
+        "desc": "Allergy Type"
+      },
+      {
+        "desc": "Allergy code / mnemonic / description",
+        "fields": [
+          "Identifier",
+          "Text",
+          "Name Of Coding System",
+          "Alternate Identifier",
+          "Alternate Text",
+          "Name Of Alternate Coding System"
+        ]
+      },
+      {
+        "desc": "Allergy Severity"
+      },
+      {
+        "desc": "Allergy Reaction"
+      },
+      {
+        "desc": "Identification Date"
+      }
+    ]
+  },
+  "BHS": {
+    "fields": [
+      {
+        "desc": "Batch Field Separator"
+      },
+      {
+        "desc": "Batch Encoding Characters"
+      },
+      {
+        "desc": "Batch Sending Application"
+      },
+      {
+        "desc": "Batch Sending Facility"
+      },
+      {
+        "desc": "Batch Receiving Application"
+      },
+      {
+        "desc": "Batch Receiving Facility"
+      },
+      {
+        "desc": "Batch creation date / time",
+        "fields": [
+          "Time Of An Event",
+          "Degree Of Precision"
+        ]
+      },
+      {
+        "desc": "Batch Security"
+      },
+      {
+        "desc": "Batch name / ID / type"
+      },
+      {
+        "desc": "Batch Comment"
+      },
+      {
+        "desc": "Batch Control ID"
+      },
+      {
+        "desc": "Reference Batch Control ID"
+      }
+    ]
+  },
+  "BLG": {
+    "fields": [
+      {
+        "desc": "When to Charge",
+        "fields": [
+          "When To Charge",
+          "Date/time"
+        ]
+      },
+      {
+        "desc": "Charge Type"
+      },
+      {
+        "desc": "Account ID",
+        "fields": [
+          "ID Number",
+          "Check Digit",
+          "Code Identifying The Check Digit Scheme Employed",
+          "Assigning Authority"
+        ]
+      }
+    ]
+  },
+  "BTS": {
+    "fields": [
+      {
+        "desc": "Batch Message Count"
+      },
+      {
+        "desc": "Batch Comment"
+      },
+      {
+        "desc": "Batch Totals",
+        "fields": [
+          "Batch Total 1",
+          "Batch Total 2"
+        ]
+      }
+    ]
+  },
+  "DG1": {
+    "fields": [
+      {
+        "desc": "Set ID - diagnosis"
+      },
+      {
+        "desc": "Diagnosis coding method"
+      },
+      {
+        "desc": "Diagnosis code"
+      },
+      {
+        "desc": "Diagnosis description"
+      },
+      {
+        "desc": "Diagnosis date / time",
+        "fields": [
+          "Time Of An Event",
+          "Degree Of Precision"
+        ]
+      },
+      {
+        "desc": "Diagnosis / DRG type"
+      },
+      {
+        "desc": "Major diagnostic category",
+        "fields": [
+          "Identifier",
+          "Text",
+          "Name Of Coding System",
+          "Alternate Identifier",
+          "Alternate Text",
+          "Name Of Alternate Coding System"
+        ]
+      },
+      {
+        "desc": "Diagnostic related group"
+      },
+      {
+        "desc": "DRG approval indicator"
+      },
+      {
+        "desc": "DRG grouper review code"
+      },
+      {
+        "desc": "Outlier type"
+      },
+      {
+        "desc": "Outlier days"
+      },
+      {
+        "desc": "Outlier cost"
+      },
+      {
+        "desc": "Grouper version and type"
+      },
+      {
+        "desc": "Diagnosis / DRG priority"
+      },
+      {
+        "desc": "Diagnosing clinician",
+        "fields": [
+          "ID Number",
+          "Family Name",
+          "Given Name",
+          "Middle Initial Or Name",
+          "Suffix",
+          "Prefix",
+          "Degree",
+          "Source Table Id",
+          "Adresse",
+          "Telefon",
+          "Faxnummer",
+          "Online-Nummer",
+          "E-Mail"
+        ]
+      }
+    ]
+  },
+  "DSC": {
+    "fields": [
+      {
+        "desc": "Continuation Pointer"
+      }
+    ]
+  },
+  "DSP": {
+    "fields": [
+      {
+        "desc": "Set ID - Display Data"
+      },
+      {
+        "desc": "Display Level"
+      },
+      {
+        "desc": "Data Line"
+      },
+      {
+        "desc": "Logical Break Point"
+      },
+      {
+        "desc": "Result ID"
+      }
+    ]
+  },
+  "ERR": {
+    "fields": [
+      {
+        "desc": "Error Code and Location",
+        "fields": [
+          "Segment-ID",
+          "Sequence",
+          "Field-Position",
+          "Code Identifying Error"
+        ]
+      }
+    ]
+  },
+  "EVN": {
+    "fields": [
+      {
+        "desc": "Event Type Code"
+      },
+      {
+        "desc": "Date / time of event",
+        "fields": [
+          "Time Of An Event",
+          "Degree Of Precision"
+        ]
+      },
+      {
+        "desc": "Date / time planned event",
+        "fields": [
+          "Time Of An Event",
+          "Degree Of Precision"
+        ]
+      },
+      {
+        "desc": "Event Reason Code"
+      },
+      {
+        "desc": "Operator ID"
+      }
+    ]
+  },
+  "FHS": {
+    "fields": [
+      {
+        "desc": "File Field Separator"
+      },
+      {
+        "desc": "File Encoding Characters"
+      },
+      {
+        "desc": "File Sending Application"
+      },
+      {
+        "desc": "File Sending Facility"
+      },
+      {
+        "desc": "File Receiving Application"
+      },
+      {
+        "desc": "File Receiving Facility"
+      },
+      {
+        "desc": "File creation date / time",
+        "fields": [
+          "Time Of An Event",
+          "Degree Of Precision"
+        ]
+      },
+      {
+        "desc": "File Security"
+      },
+      {
+        "desc": "File name / ID"
+      },
+      {
+        "desc": "File Header Comment"
+      },
+      {
+        "desc": "File Control ID"
+      },
+      {
+        "desc": "Reference File Control ID"
+      }
+    ]
+  },
+  "FT1": {
+    "fields": [
+      {
+        "desc": "Set ID - financial transaction"
+      },
+      {
+        "desc": "Transaction ID"
+      },
+      {
+        "desc": "Transaction batch ID"
+      },
+      {
+        "desc": "Transaction date"
+      },
+      {
+        "desc": "Transaction posting date"
+      },
+      {
+        "desc": "Transaction type"
+      },
+      {
+        "desc": "Transaction code",
+        "fields": [
+          "Identifier",
+          "Text",
+          "Name Of Coding System",
+          "Alternate Identifier",
+          "Alternate Text",
+          "Name Of Alternate Coding System"
+        ]
+      },
+      {
+        "desc": "Transaction description"
+      },
+      {
+        "desc": "Transaction description - alternate"
+      },
+      {
+        "desc": "Transaction quantity"
+      },
+      {
+        "desc": "Transaction amount - extended"
+      },
+      {
+        "desc": "Transaction amount - unit"
+      },
+      {
+        "desc": "Department code",
+        "fields": [
+          "Identifier",
+          "Text",
+          "Name Of Coding System",
+          "Alternate Identifier",
+          "Alternate Text",
+          "Name Of Alternate Coding System"
+        ]
+      },
+      {
+        "desc": "Insurance plan ID"
+      },
+      {
+        "desc": "Insurance amount"
+      },
+      {
+        "desc": "Assigned Patient Location",
+        "fields": [
+          "Nurse Unit",
+          "Room",
+          "Bed",
+          "Facility ID",
+          "Bed Status",
+          "Etage",
+          "Klinik",
+          "Zentrum"
+        ]
+      },
+      {
+        "desc": "Fee schedule"
+      },
+      {
+        "desc": "Patient type"
+      },
+      {
+        "desc": "Diagnosis code",
+        "fields": [
+          "Identifier",
+          "Text",
+          "Name Of Coding System",
+          "Alternate Identifier",
+          "Alternate Text",
+          "Name Of Alternate Coding System"
+        ]
+      },
+      {
+        "desc": "Performed by code",
+        "fields": [
+          "ID Number",
+          "Family Name",
+          "Given Name",
+          "Middle Initial Or Name",
+          "Suffix",
+          "Prefix",
+          "Degree",
+          "Source Table Id",
+          "Adresse",
+          "Telefon",
+          "Faxnummer",
+          "Online-Nummer",
+          "E-Mail"
+        ]
+      },
+      {
+        "desc": "Ordered by code",
+        "fields": [
+          "ID Number",
+          "Family Name",
+          "Given Name",
+          "Middle Initial Or Name",
+          "Suffix",
+          "Prefix",
+          "Degree",
+          "Source Table Id",
+          "Adresse",
+          "Telefon",
+          "Faxnummer",
+          "Online-Nummer",
+          "E-Mail"
+        ]
+      },
+      {
+        "desc": "Unit cost"
+      },
+      {
+        "desc": "Filler Order Number",
+        "fields": [
+          "Unique Filler Id",
+          "Filler Application ID"
+        ]
+      }
+    ]
+  },
+  "FTS": {
+    "fields": [
+      {
+        "desc": "File Batch Count"
+      },
+      {
+        "desc": "File Trailer Comment"
+      }
+    ]
+  },
+  "GT1": {
+    "fields": [
+      {
+        "desc": "Set ID - guarantor"
+      },
+      {
+        "desc": "Guarantor number",
+        "fields": [
+          "ID Number",
+          "Check Digit",
+          "Code Identifying The Check Digit Scheme Employed",
+          "Assigning Authority"
+        ]
+      },
+      {
+        "desc": "Guarantor name",
+        "fields": [
+          "Family Name",
+          "Given Name",
+          "Middle Initial Or Name",
+          "Suffix",
+          "Prefix",
+          "Degree"
+        ]
+      },
+      {
+        "desc": "Guarantor spouse name",
+        "fields": [
+          "Family Name",
+          "Given Name",
+          "Middle Initial Or Name",
+          "Suffix",
+          "Prefix",
+          "Degree"
+        ]
+      },
+      {
+        "desc": "Guarantor address",
+        "fields": [
+          "Street Address",
+          "Other Designation",
+          "City",
+          "State Or Province",
+          "Zip Or Postal Code",
+          "Country",
+          "Type",
+          "Other Geographic Designation"
+        ]
+      },
+      {
+        "desc": "Guarantor phone number - home"
+      },
+      {
+        "desc": "Guarantor phone number - business"
+      },
+      {
+        "desc": "Guarantor date of birth"
+      },
+      {
+        "desc": "Guarantor sex"
+      },
+      {
+        "desc": "Guarantor type"
+      },
+      {
+        "desc": "Guarantor relationship"
+      },
+      {
+        "desc": "Guarantor social security number"
+      },
+      {
+        "desc": "Guarantor date - begin"
+      },
+      {
+        "desc": "Guarantor date - end"
+      },
+      {
+        "desc": "Guarantor priority"
+      },
+      {
+        "desc": "Guarantor employer name"
+      },
+      {
+        "desc": "Guarantor employer address",
+        "fields": [
+          "Street Address",
+          "Other Designation",
+          "City",
+          "State Or Province",
+          "Zip Or Postal Code",
+          "Country",
+          "Type",
+          "Other Geographic Designation"
+        ]
+      },
+      {
+        "desc": "Guarantor employ phone number"
+      },
+      {
+        "desc": "Guarantor employee ID number"
+      },
+      {
+        "desc": "Guarantor employment status"
+      },
+      {
+        "desc": "Guarantor organization"
+      }
+    ]
+  },
+  "IN1": {
+    "fields": [
+      {
+        "desc": "Set ID - insurance"
+      },
+      {
+        "desc": "Insurance plan ID"
+      },
+      {
+        "desc": "Insurance company ID"
+      },
+      {
+        "desc": "Insurance company name"
+      },
+      {
+        "desc": "Insurance company address",
+        "fields": [
+          "Street Address",
+          "Other Designation",
+          "City",
+          "State Or Province",
+          "Zip Or Postal Code",
+          "Country",
+          "Type",
+          "Other Geographic Designation"
+        ]
+      },
+      {
+        "desc": "Insurance company contact pers",
+        "fields": [
+          "Family Name",
+          "Given Name",
+          "Middle Initial Or Name",
+          "Suffix",
+          "Prefix",
+          "Degree"
+        ]
+      },
+      {
+        "desc": "Insurance company phone number"
+      },
+      {
+        "desc": "Group number"
+      },
+      {
+        "desc": "Group name"
+      },
+      {
+        "desc": "Insured's group employer ID"
+      },
+      {
+        "desc": "Insured's group employer name"
+      },
+      {
+        "desc": "Plan effective date"
+      },
+      {
+        "desc": "Plan expiration date"
+      },
+      {
+        "desc": "Authorization information",
+        "fields": [
+          "Authorization Number",
+          "Date",
+          "Source"
+        ]
+      },
+      {
+        "desc": "Plan type"
+      },
+      {
+        "desc": "Name of insured",
+        "fields": [
+          "Family Name",
+          "Given Name",
+          "Middle Initial Or Name",
+          "Suffix",
+          "Prefix",
+          "Degree"
+        ]
+      },
+      {
+        "desc": "Insured's relationship to patient"
+      },
+      {
+        "desc": "Insured's date of birth"
+      },
+      {
+        "desc": "Insured's address",
+        "fields": [
+          "Street Address",
+          "Other Designation",
+          "City",
+          "State Or Province",
+          "Zip Or Postal Code",
+          "Country",
+          "Type",
+          "Other Geographic Designation"
+        ]
+      },
+      {
+        "desc": "Assignment of benefits"
+      },
+      {
+        "desc": "Coordination of benefits"
+      },
+      {
+        "desc": "Coordination of benefits - priority"
+      },
+      {
+        "desc": "Notice of admission code"
+      },
+      {
+        "desc": "Notice of admission date"
+      },
+      {
+        "desc": "Report of eligibility code"
+      },
+      {
+        "desc": "Report of eligibility date"
+      },
+      {
+        "desc": "Release information code"
+      },
+      {
+        "desc": "Pre-admit certification"
+      },
+      {
+        "desc": "Verification date / time",
+        "fields": [
+          "Time Of An Event",
+          "Degree Of Precision"
+        ]
+      },
+      {
+        "desc": "Verification by",
+        "fields": [
+          "ID Number",
+          "Family Name",
+          "Given Name",
+          "Middle Initial Or Name",
+          "Suffix",
+          "Prefix",
+          "Degree",
+          "Source Table Id",
+          "Adresse",
+          "Telefon",
+          "Faxnummer",
+          "Online-Nummer",
+          "E-Mail"
+        ]
+      },
+      {
+        "desc": "Type of agreement code"
+      },
+      {
+        "desc": "Billing status"
+      },
+      {
+        "desc": "Lifetime reserve days"
+      },
+      {
+        "desc": "Delay before lifetime reserve days"
+      },
+      {
+        "desc": "Company plan code"
+      },
+      {
+        "desc": "Policy number"
+      },
+      {
+        "desc": "Policy deductible"
+      },
+      {
+        "desc": "Policy limit - amount"
+      },
+      {
+        "desc": "Policy limit - days"
+      },
+      {
+        "desc": "Room rate - semi-private"
+      },
+      {
+        "desc": "Room rate - private"
+      },
+      {
+        "desc": "Insured's employment status",
+        "fields": [
+          "Identifier",
+          "Text",
+          "Name Of Coding System",
+          "Alternate Identifier",
+          "Alternate Text",
+          "Name Of Alternate Coding System"
+        ]
+      },
+      {
+        "desc": "Insured's sex"
+      },
+      {
+        "desc": "Insured's employer address",
+        "fields": [
+          "Street Address",
+          "Other Designation",
+          "City",
+          "State Or Province",
+          "Zip Or Postal Code",
+          "Country",
+          "Type",
+          "Other Geographic Designation"
+        ]
+      },
+      {
+        "desc": "Verification status"
+      },
+      {
+        "desc": "Prior insurance plan ID"
+      }
+    ]
+  },
+  "IN2": {
+    "fields": [
+      {
+        "desc": "Insured's employee ID"
+      },
+      {
+        "desc": "Insured's social security number"
+      },
+      {
+        "desc": "Insured's employer name",
+        "fields": [
+          "ID Number",
+          "Family Name",
+          "Given Name",
+          "Middle Initial Or Name",
+          "Suffix",
+          "Prefix",
+          "Degree",
+          "Source Table Id",
+          "Adresse",
+          "Telefon",
+          "Faxnummer",
+          "Online-Nummer",
+          "E-Mail"
+        ]
+      },
+      {
+        "desc": "Employer information data"
+      },
+      {
+        "desc": "Mail claim party"
+      },
+      {
+        "desc": "Medicare health insurance card number"
+      },
+      {
+        "desc": "Medicaid case name",
+        "fields": [
+          "Family Name",
+          "Given Name",
+          "Middle Initial Or Name",
+          "Suffix",
+          "Prefix",
+          "Degree"
+        ]
+      },
+      {
+        "desc": "Medicaid case number"
+      },
+      {
+        "desc": "Champus sponsor name",
+        "fields": [
+          "Family Name",
+          "Given Name",
+          "Middle Initial Or Name",
+          "Suffix",
+          "Prefix",
+          "Degree"
+        ]
+      },
+      {
+        "desc": "Champus ID number"
+      },
+      {
+        "desc": "Dependent of champus recipient"
+      },
+      {
+        "desc": "Champus organization"
+      },
+      {
+        "desc": "Champus station"
+      },
+      {
+        "desc": "Champus service"
+      },
+      {
+        "desc": "Champus rank / grade"
+      },
+      {
+        "desc": "Champus status"
+      },
+      {
+        "desc": "Champus retire date"
+      },
+      {
+        "desc": "Champus non-availability certification on file"
+      },
+      {
+        "desc": "Baby coverage"
+      },
+      {
+        "desc": "Combine baby bill"
+      },
+      {
+        "desc": "Blood deductible"
+      },
+      {
+        "desc": "Special coverage approval name",
+        "fields": [
+          "Family Name",
+          "Given Name",
+          "Middle Initial Or Name",
+          "Suffix",
+          "Prefix",
+          "Degree"
+        ]
+      },
+      {
+        "desc": "Special coverage approval title"
+      },
+      {
+        "desc": "Non-covered insurance code"
+      },
+      {
+        "desc": "Payor ID"
+      },
+      {
+        "desc": "Payor subscriber ID"
+      },
+      {
+        "desc": "Eligibility source"
+      },
+      {
+        "desc": "Room coverage type / amount",
+        "fields": [
+          "Room Type",
+          "Amount Type",
+          "Coverage Amount"
+        ]
+      },
+      {
+        "desc": "Policy type / amount",
+        "fields": [
+          "Policy Type",
+          "Amount Class",
+          "Amount"
+        ]
+      },
+      {
+        "desc": "Daily deductible",
+        "fields": [
+          "Delay Days",
+          "Amount",
+          "Number Of Days"
+        ]
+      }
+    ]
+  },
+  "IN3": {
+    "fields": [
+      {
+        "desc": "Set ID - insurance certification"
+      },
+      {
+        "desc": "Certification number"
+      },
+      {
+        "desc": "Certified by",
+        "fields": [
+          "ID Number",
+          "Family Name",
+          "Given Name",
+          "Middle Initial Or Name",
+          "Suffix",
+          "Prefix",
+          "Degree",
+          "Source Table Id",
+          "Adresse",
+          "Telefon",
+          "Faxnummer",
+          "Online-Nummer",
+          "E-Mail"
+        ]
+      },
+      {
+        "desc": "Certification required"
+      },
+      {
+        "desc": "Penalty",
+        "fields": [
+          "Penalty ID",
+          "Penalty Amount"
+        ]
+      },
+      {
+        "desc": "Certification date / time",
+        "fields": [
+          "Time Of An Event",
+          "Degree Of Precision"
+        ]
+      },
+      {
+        "desc": "Certification modify date / time",
+        "fields": [
+          "Time Of An Event",
+          "Degree Of Precision"
+        ]
+      },
+      {
+        "desc": "Operator",
+        "fields": [
+          "ID Number",
+          "Family Name",
+          "Given Name",
+          "Middle Initial Or Name",
+          "Suffix",
+          "Prefix",
+          "Degree",
+          "Source Table Id",
+          "Adresse",
+          "Telefon",
+          "Faxnummer",
+          "Online-Nummer",
+          "E-Mail"
+        ]
+      },
+      {
+        "desc": "Certification begin date"
+      },
+      {
+        "desc": "Certification end date"
+      },
+      {
+        "desc": "Days",
+        "fields": [
+          "Day Type",
+          "Number Of Days"
+        ]
+      },
+      {
+        "desc": "Non-concur code / description",
+        "fields": [
+          "Identifier",
+          "Text",
+          "Name Of Coding System",
+          "Alternate Identifier",
+          "Alternate Text",
+          "Name Of Alternate Coding System"
+        ]
+      },
+      {
+        "desc": "Non-concur effective date / time",
+        "fields": [
+          "Time Of An Event",
+          "Degree Of Precision"
+        ]
+      },
+      {
+        "desc": "Physician reviewer",
+        "fields": [
+          "ID Number",
+          "Family Name",
+          "Given Name",
+          "Middle Initial Or Name",
+          "Suffix",
+          "Prefix",
+          "Degree",
+          "Source Table Id",
+          "Adresse",
+          "Telefon",
+          "Faxnummer",
+          "Online-Nummer",
+          "E-Mail"
+        ]
+      },
+      {
+        "desc": "Certification contact"
+      },
+      {
+        "desc": "Certification contact phone number"
+      },
+      {
+        "desc": "Appeal reason",
+        "fields": [
+          "Identifier",
+          "Text",
+          "Name Of Coding System",
+          "Alternate Identifier",
+          "Alternate Text",
+          "Name Of Alternate Coding System"
+        ]
+      },
+      {
+        "desc": "Certification agency",
+        "fields": [
+          "Identifier",
+          "Text",
+          "Name Of Coding System",
+          "Alternate Identifier",
+          "Alternate Text",
+          "Name Of Alternate Coding System"
+        ]
+      },
+      {
+        "desc": "Certification agency phone number"
+      },
+      {
+        "desc": "Pre-certification required / window",
+        "fields": [
+          "Pre-certification Patient Type",
+          "Pre-certication Required",
+          "Pre-certification Window"
+        ]
+      },
+      {
+        "desc": "Case manager"
+      },
+      {
+        "desc": "Second opinion date"
+      },
+      {
+        "desc": "Second opinion status"
+      },
+      {
+        "desc": "Second opinion documentation received"
+      },
+      {
+        "desc": "Second opinion practitioner",
+        "fields": [
+          "ID Number",
+          "Family Name",
+          "Given Name",
+          "Middle Initial Or Name",
+          "Suffix",
+          "Prefix",
+          "Degree",
+          "Source Table Id",
+          "Adresse",
+          "Telefon",
+          "Faxnummer",
+          "Online-Nummer",
+          "E-Mail"
+        ]
+      }
+    ]
+  },
+  "MFA": {
+    "fields": [
+      {
+        "desc": "Record-level event code"
+      },
+      {
+        "desc": "MFN control ID"
+      },
+      {
+        "desc": "Event completion date / time",
+        "fields": [
+          "Time Of An Event",
+          "Degree Of Precision"
+        ]
+      },
+      {
+        "desc": "Error return code and/or text",
+        "fields": [
+          "Identifier",
+          "Text",
+          "Name Of Coding System",
+          "Alternate Identifier",
+          "Alternate Text",
+          "Name Of Alternate Coding System"
+        ]
+      },
+      {
+        "desc": "Primary key value",
+        "fields": [
+          "Identifier",
+          "Text",
+          "Name Of Coding System",
+          "Alternate Identifier",
+          "Alternate Text",
+          "Name Of Alternate Coding System"
+        ]
+      }
+    ]
+  },
+  "MFE": {
+    "fields": [
+      {
+        "desc": "Record-level event code"
+      },
+      {
+        "desc": "MFN control ID"
+      },
+      {
+        "desc": "Effective date / time",
+        "fields": [
+          "Time Of An Event",
+          "Degree Of Precision"
+        ]
+      },
+      {
+        "desc": "Primary key value",
+        "fields": [
+          "Identifier",
+          "Text",
+          "Name Of Coding System",
+          "Alternate Identifier",
+          "Alternate Text",
+          "Name Of Alternate Coding System"
+        ]
+      }
+    ]
+  },
+  "MFI": {
+    "fields": [
+      {
+        "desc": "Master file identifier",
+        "fields": [
+          "Identifier",
+          "Text",
+          "Name Of Coding System",
+          "Alternate Identifier",
+          "Alternate Text",
+          "Name Of Alternate Coding System"
+        ]
+      },
+      {
+        "desc": "Master file application identifier"
+      },
+      {
+        "desc": "File-level event code"
+      },
+      {
+        "desc": "Entered date / time",
+        "fields": [
+          "Time Of An Event",
+          "Degree Of Precision"
+        ]
+      },
+      {
+        "desc": "Effective date / time",
+        "fields": [
+          "Time Of An Event",
+          "Degree Of Precision"
+        ]
+      },
+      {
+        "desc": "Response level code"
+      }
+    ]
+  },
+  "MRG": {
+    "fields": [
+      {
+        "desc": "Prior Patient ID - Internal",
+        "fields": [
+          "ID Number",
+          "Check Digit",
+          "Check Digit Scheme",
+          "Facility ID",
+          "Type"
+        ]
+      },
+      {
+        "desc": "Prior Alternate Patient ID",
+        "fields": [
+          "ID Number",
+          "Check Digit",
+          "Check Digit Scheme",
+          "Facility ID",
+          "Type"
+        ]
+      },
+      {
+        "desc": "Prior Patient Account Number",
+        "fields": [
+          "ID Number",
+          "Check Digit",
+          "Code Identifying The Check Digit Scheme Employed",
+          "Assigning Authority"
+        ]
+      },
+      {
+        "desc": "Prior Patient ID - External",
+        "fields": [
+          "ID Number",
+          "Check Digit",
+          "Code Identifying The Check Digit Scheme Employed",
+          "Assigning Authority"
+        ]
+      }
+    ]
+  },
+  "MSA": {
+    "fields": [
+      {
+        "desc": "Acknowledgement code"
+      },
+      {
+        "desc": "Message Control ID"
+      },
+      {
+        "desc": "Text Message"
+      },
+      {
+        "desc": "Expected Sequence Number"
+      },
+      {
+        "desc": "Delayed Acknowledgement type"
+      },
+      {
+        "desc": "Error Condition",
+        "fields": [
+          "Identifier",
+          "Text",
+          "Name Of Coding System",
+          "Alternate Identifier",
+          "Alternate Text",
+          "Name Of Alternate Coding System"
+        ]
+      }
+    ]
+  },
+  "MSH": {
+    "fields": [
+      {
+        "desc": "Field Separator"
+      },
+      {
+        "desc": "Encoding characters"
+      },
+      {
+        "desc": "Sending application"
+      },
+      {
+        "desc": "Sending facility"
+      },
+      {
+        "desc": "Receiving application"
+      },
+      {
+        "desc": "Receiving facility"
+      },
+      {
+        "desc": "Date / Time of message",
+        "fields": [
+          "Time Of An Event",
+          "Degree Of Precision"
+        ]
+      },
+      {
+        "desc": "Security"
+      },
+      {
+        "desc": "Message type",
+        "fields": [
+          "Message Type",
+          "Trigger Event"
+        ]
+      },
+      {
+        "desc": "Message Control ID"
+      },
+      {
+        "desc": "Processing ID"
+      },
+      {
+        "desc": "Version ID"
+      },
+      {
+        "desc": "Sequence number"
+      },
+      {
+        "desc": "Continuation pointer"
+      },
+      {
+        "desc": "Accept acknowledgement type"
+      },
+      {
+        "desc": "Application acknowledgement type"
+      },
+      {
+        "desc": "Country code"
+      }
+    ]
+  },
+  "NCK": {
+    "fields": [
+      {
+        "desc": "System Date/Time",
+        "fields": [
+          "Time Of An Event",
+          "Degree Of Precision"
+        ]
+      }
+    ]
+  },
+  "NK1": {
+    "fields": [
+      {
+        "desc": "Set ID - Next of Kin"
+      },
+      {
+        "desc": "NK Name",
+        "fields": [
+          "Family Name",
+          "Given Name",
+          "Middle Initial Or Name",
+          "Suffix",
+          "Prefix",
+          "Degree"
+        ]
+      },
+      {
+        "desc": "Relationship",
+        "fields": [
+          "Identifier",
+          "Text",
+          "Name Of Coding System",
+          "Alternate Identifier",
+          "Alternate Text",
+          "Name Of Alternate Coding System"
+        ]
+      },
+      {
+        "desc": "Address",
+        "fields": [
+          "Street Address",
+          "Other Designation",
+          "City",
+          "State Or Province",
+          "Zip Or Postal Code",
+          "Country",
+          "Type",
+          "Other Geographic Designation"
+        ]
+      },
+      {
+        "desc": "Phone Number"
+      },
+      {
+        "desc": "Business Phone Number"
+      },
+      {
+        "desc": "Contact Role",
+        "fields": [
+          "Identifier",
+          "Text",
+          "Name Of Coding System",
+          "Alternate Identifier",
+          "Alternate Text",
+          "Name Of Alternate Coding System"
+        ]
+      },
+      {
+        "desc": "Start Date"
+      },
+      {
+        "desc": "End Date"
+      },
+      {
+        "desc": "Next of Kin"
+      },
+      {
+        "desc": "Next of kin job code / class",
+        "fields": [
+          "Job Code",
+          "Employee Classification"
+        ]
+      },
+      {
+        "desc": "Next of Kin Employee Number"
+      },
+      {
+        "desc": "Organization Name"
+      }
+    ]
+  },
+  "NPU": {
+    "fields": [
+      {
+        "desc": "Bed Location",
+        "fields": [
+          "Nurse Unit",
+          "Room",
+          "Bed",
+          "Facility ID",
+          "Bed Status",
+          "Etage",
+          "Klinik",
+          "Zentrum"
+        ]
+      },
+      {
+        "desc": "Bed Status"
+      }
+    ]
+  },
+  "NSC": {
+    "fields": [
+      {
+        "desc": "Network Change Type"
+      },
+      {
+        "desc": "Current CPU"
+      },
+      {
+        "desc": "Current Fileserver"
+      },
+      {
+        "desc": "Current Application"
+      },
+      {
+        "desc": "Current Facility"
+      },
+      {
+        "desc": "New CPU"
+      },
+      {
+        "desc": "New Fileserver"
+      },
+      {
+        "desc": "New Application"
+      },
+      {
+        "desc": "New Facility"
+      }
+    ]
+  },
+  "NST": {
+    "fields": [
+      {
+        "desc": "Statistics Available"
+      },
+      {
+        "desc": "Source Identifier"
+      },
+      {
+        "desc": "Source Type"
+      },
+      {
+        "desc": "Statistics Start",
+        "fields": [
+          "Time Of An Event",
+          "Degree Of Precision"
+        ]
+      },
+      {
+        "desc": "Statistics End",
+        "fields": [
+          "Time Of An Event",
+          "Degree Of Precision"
+        ]
+      },
+      {
+        "desc": "Receive Character Count"
+      },
+      {
+        "desc": "Send Character Count"
+      },
+      {
+        "desc": "Message Received"
+      },
+      {
+        "desc": "Message Sent"
+      },
+      {
+        "desc": "Checksum Errors Received"
+      },
+      {
+        "desc": "Length Errors Received"
+      },
+      {
+        "desc": "Other Errors Received"
+      },
+      {
+        "desc": "Connect Timeouts"
+      },
+      {
+        "desc": "Receive Timeouts"
+      },
+      {
+        "desc": "Network Errors"
+      }
+    ]
+  },
+  "NTE": {
+    "fields": [
+      {
+        "desc": "Set ID - Notes and Comments"
+      },
+      {
+        "desc": "Source of Comment"
+      },
+      {
+        "desc": "Comment"
+      }
+    ]
+  },
+  "OBR": {
+    "fields": [
+      {
+        "desc": "Set ID - Observation Request"
+      },
+      {
+        "desc": "Placer Order Number",
+        "fields": [
+          "Unique Placer Id",
+          "Placer Application"
+        ]
+      },
+      {
+        "desc": "Filler Order Number",
+        "fields": [
+          "Unique Filler Id",
+          "Filler Application ID"
+        ]
+      },
+      {
+        "desc": "Universal Service ID",
+        "fields": [
+          "Identifier",
+          "Text",
+          "Name Of Coding System",
+          "Alternate Identifier",
+          "Alternate Text",
+          "Name Of Alternate Coding System"
+        ]
+      },
+      {
+        "desc": "Priority"
+      },
+      {
+        "desc": "Requested date / time",
+        "fields": [
+          "Time Of An Event",
+          "Degree Of Precision"
+        ]
+      },
+      {
+        "desc": "Observation date / time",
+        "fields": [
+          "Time Of An Event",
+          "Degree Of Precision"
+        ]
+      },
+      {
+        "desc": "Observation end date / time",
+        "fields": [
+          "Time Of An Event",
+          "Degree Of Precision"
+        ]
+      },
+      {
+        "desc": "Collection Volume",
+        "fields": [
+          "Quantity",
+          "Units"
+        ]
+      },
+      {
+        "desc": "Collector Identifier",
+        "fields": [
+          "ID Number",
+          "Family Name",
+          "Given Name",
+          "Middle Initial Or Name",
+          "Suffix",
+          "Prefix",
+          "Degree",
+          "Source Table Id",
+          "Adresse",
+          "Telefon",
+          "Faxnummer",
+          "Online-Nummer",
+          "E-Mail"
+        ]
+      },
+      {
+        "desc": "Specimen action code"
+      },
+      {
+        "desc": "Danger Code",
+        "fields": [
+          "Identifier",
+          "Text",
+          "Name Of Coding System",
+          "Alternate Identifier",
+          "Alternate Text",
+          "Name Of Alternate Coding System"
+        ]
+      },
+      {
+        "desc": "Relevant clinical information"
+      },
+      {
+        "desc": "Specimen received date / time",
+        "fields": [
+          "Time Of An Event",
+          "Degree Of Precision"
+        ]
+      },
+      {
+        "desc": "Specimen source",
+        "fields": [
+          "Specimen Source Name Or Code",
+          "Additives",
+          "Freetext",
+          "Body Site",
+          "Site Modifier"
+        ]
+      },
+      {
+        "desc": "Ordering Provider",
+        "fields": [
+          "ID Number",
+          "Family Name",
+          "Given Name",
+          "Middle Initial Or Name",
+          "Suffix",
+          "Prefix",
+          "Degree",
+          "Source Table Id",
+          "Adresse",
+          "Telefon",
+          "Faxnummer",
+          "Online-Nummer",
+          "E-Mail"
+        ]
+      },
+      {
+        "desc": "Order Callback Phone Number"
+      },
+      {
+        "desc": "Placer field 1"
+      },
+      {
+        "desc": "Placer field 2"
+      },
+      {
+        "desc": "Filler Field 1"
+      },
+      {
+        "desc": "Filler Field 2"
+      },
+      {
+        "desc": "Results report / status change - date / time",
+        "fields": [
+          "Time Of An Event",
+          "Degree Of Precision"
+        ]
+      },
+      {
+        "desc": "Charge to Practice",
+        "fields": [
+          "Dollar Amount",
+          "Charge Code"
+        ]
+      },
+      {
+        "desc": "Diagnostic service section ID"
+      },
+      {
+        "desc": "Result Status"
+      },
+      {
+        "desc": "Parent Result",
+        "fields": [
+          "Observation Identifier",
+          "Sub-ID",
+          "Result"
+        ]
+      },
+      {
+        "desc": "Quantity / timing",
+        "fields": [
+          "Quantity",
+          "Interval",
+          "Duration",
+          "Start Date/time",
+          "End Date/time",
+          "Priority",
+          "Condition",
+          "Text",
+          "Conjunction",
+          "Order Sequencing"
+        ]
+      },
+      {
+        "desc": "Result Copies To",
+        "fields": [
+          "ID Number",
+          "Family Name",
+          "Given Name",
+          "Middle Initial Or Name",
+          "Suffix",
+          "Prefix",
+          "Degree",
+          "Source Table Id",
+          "Adresse",
+          "Telefon",
+          "Faxnummer",
+          "Online-Nummer",
+          "E-Mail"
+        ]
+      },
+      {
+        "desc": "Parent Number",
+        "fields": [
+          "Parent s Placer Order Number",
+          "Parent s Filler Order Number"
+        ]
+      },
+      {
+        "desc": "Transportation Mode"
+      },
+      {
+        "desc": "Reason for Study",
+        "fields": [
+          "Identifier",
+          "Text",
+          "Name Of Coding System",
+          "Alternate Identifier",
+          "Alternate Text",
+          "Name Of Alternate Coding System"
+        ]
+      },
+      {
+        "desc": "Principal Result Interpreter",
+        "fields": [
+          "Interpreter / Technician",
+          "Start Date/time",
+          "End Date/time",
+          "Location"
+        ]
+      },
+      {
+        "desc": "Assistant Result Interpreter",
+        "fields": [
+          "Interpreter / Technician",
+          "Start Date/time",
+          "End Date/time",
+          "Location"
+        ]
+      },
+      {
+        "desc": "Technician",
+        "fields": [
+          "Interpreter / Technician",
+          "Start Date/time",
+          "End Date/time",
+          "Location"
+        ]
+      },
+      {
+        "desc": "Transcriptionist",
+        "fields": [
+          "Interpreter / Technician",
+          "Start Date/time",
+          "End Date/time",
+          "Location"
+        ]
+      },
+      {
+        "desc": "Scheduled date / time",
+        "fields": [
+          "Time Of An Event",
+          "Degree Of Precision"
+        ]
+      }
+    ]
+  },
+  "OBX": {
+    "fields": [
+      {
+        "desc": "Set ID - Observational Simple"
+      },
+      {
+        "desc": "Value Type"
+      },
+      {
+        "desc": "Observation Identifier",
+        "fields": [
+          "Identifier",
+          "Text",
+          "Name Of Coding System",
+          "Alternate Identifier",
+          "Alternate Text",
+          "Name Of Alternate Coding System"
+        ]
+      },
+      {
+        "desc": "Observation Sub-ID"
+      },
+      {
+        "desc": "Observation Value"
+      },
+      {
+        "desc": "Units",
+        "fields": [
+          "Identifier",
+          "Text",
+          "Name Of Coding System",
+          "Alternate Identifier",
+          "Alternate Text",
+          "Name Of Alternate Coding System"
+        ]
+      },
+      {
+        "desc": "References Range"
+      },
+      {
+        "desc": "Abnormal Flags"
+      },
+      {
+        "desc": "Probability"
+      },
+      {
+        "desc": "Nature of Abnormal Test"
+      },
+      {
+        "desc": "Observation result status"
+      },
+      {
+        "desc": "Effective date last observation normal values",
+        "fields": [
+          "Time Of An Event",
+          "Degree Of Precision"
+        ]
+      },
+      {
+        "desc": "User Defined Access Checks"
+      },
+      {
+        "desc": "Date / time of the observation",
+        "fields": [
+          "Time Of An Event",
+          "Degree Of Precision"
+        ]
+      },
+      {
+        "desc": "Producer's ID",
+        "fields": [
+          "Identifier",
+          "Text",
+          "Name Of Coding System",
+          "Alternate Identifier",
+          "Alternate Text",
+          "Name Of Alternate Coding System"
+        ]
+      },
+      {
+        "desc": "Responsible Observer",
+        "fields": [
+          "ID Number",
+          "Family Name",
+          "Given Name",
+          "Middle Initial Or Name",
+          "Suffix",
+          "Prefix",
+          "Degree",
+          "Source Table Id",
+          "Adresse",
+          "Telefon",
+          "Faxnummer",
+          "Online-Nummer",
+          "E-Mail"
+        ]
+      }
+    ]
+  },
+  "ODS": {
+    "fields": [
+      {
+        "desc": "Type"
+      },
+      {
+        "desc": "Service Period",
+        "fields": [
+          "Identifier",
+          "Text",
+          "Name Of Coding System",
+          "Alternate Identifier",
+          "Alternate Text",
+          "Name Of Alternate Coding System"
+        ]
+      },
+      {
+        "desc": "Diet, Supplement, or Preference Code",
+        "fields": [
+          "Identifier",
+          "Text",
+          "Name Of Coding System",
+          "Alternate Identifier",
+          "Alternate Text",
+          "Name Of Alternate Coding System"
+        ]
+      },
+      {
+        "desc": "Text Instruction"
+      }
+    ]
+  },
+  "ODT": {
+    "fields": [
+      {
+        "desc": "Tray Type",
+        "fields": [
+          "Identifier",
+          "Text",
+          "Name Of Coding System",
+          "Alternate Identifier",
+          "Alternate Text",
+          "Name Of Alternate Coding System"
+        ]
+      },
+      {
+        "desc": "Service Period",
+        "fields": [
+          "Identifier",
+          "Text",
+          "Name Of Coding System",
+          "Alternate Identifier",
+          "Alternate Text",
+          "Name Of Alternate Coding System"
+        ]
+      },
+      {
+        "desc": "Text Instruction"
+      }
+    ]
+  },
+  "OM1": {
+    "fields": [
+      {
+        "desc": "Segment Type ID"
+      },
+      {
+        "desc": "Sequence Number - Test/ Observation Master File"
+      },
+      {
+        "desc": "Producer's test / observation ID",
+        "fields": [
+          "Identifier",
+          "Text",
+          "Name Of Coding System",
+          "Alternate Identifier",
+          "Alternate Text",
+          "Name Of Alternate Coding System"
+        ]
+      },
+      {
+        "desc": "Permitted Data Types"
+      },
+      {
+        "desc": "Specimen Required"
+      },
+      {
+        "desc": "Producer ID",
+        "fields": [
+          "Identifier",
+          "Text",
+          "Name Of Coding System",
+          "Alternate Identifier",
+          "Alternate Text",
+          "Name Of Alternate Coding System"
+        ]
+      },
+      {
+        "desc": "Observation Description"
+      },
+      {
+        "desc": "Other test / observation IDs for the observation",
+        "fields": [
+          "Identifier",
+          "Text",
+          "Name Of Coding System",
+          "Alternate Identifier",
+          "Alternate Text",
+          "Name Of Alternate Coding System"
+        ]
+      },
+      {
+        "desc": "Other Names"
+      },
+      {
+        "desc": "Preferred Report Name for the Observation"
+      },
+      {
+        "desc": "Preferred Short Name or Mnemonic for Observation"
+      },
+      {
+        "desc": "Preferred Long Name for the Observation"
+      },
+      {
+        "desc": "Orderability"
+      },
+      {
+        "desc": "Identity of instrument used to perform this study",
+        "fields": [
+          "Identifier",
+          "Text",
+          "Name Of Coding System",
+          "Alternate Identifier",
+          "Alternate Text",
+          "Name Of Alternate Coding System"
+        ]
+      },
+      {
+        "desc": "Coded Representation of Method",
+        "fields": [
+          "Identifier",
+          "Text",
+          "Name Of Coding System",
+          "Alternate Identifier",
+          "Alternate Text",
+          "Name Of Alternate Coding System"
+        ]
+      },
+      {
+        "desc": "Portable"
+      },
+      {
+        "desc": "Observation producing department / section"
+      },
+      {
+        "desc": "Telephone Number of Section"
+      },
+      {
+        "desc": "Nature of test / observation"
+      },
+      {
+        "desc": "Report Subheader",
+        "fields": [
+          "Identifier",
+          "Text",
+          "Name Of Coding System",
+          "Alternate Identifier",
+          "Alternate Text",
+          "Name Of Alternate Coding System"
+        ]
+      },
+      {
+        "desc": "Report Display Order"
+      },
+      {
+        "desc": "Date / time stamp for any change in definition for obs",
+        "fields": [
+          "Time Of An Event",
+          "Degree Of Precision"
+        ]
+      },
+      {
+        "desc": "Effective date / time of change",
+        "fields": [
+          "Time Of An Event",
+          "Degree Of Precision"
+        ]
+      },
+      {
+        "desc": "Typical Turn-around Time"
+      },
+      {
+        "desc": "Processing Time"
+      },
+      {
+        "desc": "Processing Priority"
+      },
+      {
+        "desc": "Reporting Priority"
+      },
+      {
+        "desc": "Outside Site",
+        "fields": [
+          "Identifier",
+          "Text",
+          "Name Of Coding System",
+          "Alternate Identifier",
+          "Alternate Text",
+          "Name Of Alternate Coding System"
+        ]
+      },
+      {
+        "desc": "Address of Outside Site",
+        "fields": [
+          "Street Address",
+          "Other Designation",
+          "City",
+          "State Or Province",
+          "Zip Or Postal Code",
+          "Country",
+          "Type",
+          "Other Geographic Designation"
+        ]
+      },
+      {
+        "desc": "Phone Number of Outside Site"
+      },
+      {
+        "desc": "Confidentiality Code"
+      },
+      {
+        "desc": "Observations required to interpret the observation",
+        "fields": [
+          "Identifier",
+          "Text",
+          "Name Of Coding System",
+          "Alternate Identifier",
+          "Alternate Text",
+          "Name Of Alternate Coding System"
+        ]
+      },
+      {
+        "desc": "Interpretation of Observations"
+      },
+      {
+        "desc": "Contraindications to Observations",
+        "fields": [
+          "Identifier",
+          "Text",
+          "Name Of Coding System",
+          "Alternate Identifier",
+          "Alternate Text",
+          "Name Of Alternate Coding System"
+        ]
+      },
+      {
+        "desc": "Reflex tests / observations",
+        "fields": [
+          "Identifier",
+          "Text",
+          "Name Of Coding System",
+          "Alternate Identifier",
+          "Alternate Text",
+          "Name Of Alternate Coding System"
+        ]
+      },
+      {
+        "desc": "Rules that Trigger Reflex Testing"
+      },
+      {
+        "desc": "Fixed Canned Message",
+        "fields": [
+          "Identifier",
+          "Text",
+          "Name Of Coding System",
+          "Alternate Identifier",
+          "Alternate Text",
+          "Name Of Alternate Coding System"
+        ]
+      },
+      {
+        "desc": "Patient Preparation"
+      },
+      {
+        "desc": "Procedure Medication",
+        "fields": [
+          "Identifier",
+          "Text",
+          "Name Of Coding System",
+          "Alternate Identifier",
+          "Alternate Text",
+          "Name Of Alternate Coding System"
+        ]
+      },
+      {
+        "desc": "Factors that may affect the observation"
+      },
+      {
+        "desc": "Test / observation performance schedule"
+      },
+      {
+        "desc": "Description of Test Methods"
+      }
+    ]
+  },
+  "OM2": {
+    "fields": [
+      {
+        "desc": "Segment Type ID"
+      },
+      {
+        "desc": "Sequence Number - Test/ Observation Master File"
+      },
+      {
+        "desc": "Units of Measure",
+        "fields": [
+          "Identifier",
+          "Text",
+          "Name Of Coding System",
+          "Alternate Identifier",
+          "Alternate Text",
+          "Name Of Alternate Coding System"
+        ]
+      },
+      {
+        "desc": "Range of Decimal Precision"
+      },
+      {
+        "desc": "Corresponding SI Units of Measure",
+        "fields": [
+          "Identifier",
+          "Text",
+          "Name Of Coding System",
+          "Alternate Identifier",
+          "Alternate Text",
+          "Name Of Alternate Coding System"
+        ]
+      },
+      {
+        "desc": "SI Conversion Factor"
+      },
+      {
+        "desc": "Reference",
+        "fields": [
+          "Reference Range",
+          "Sex",
+          "Age Range",
+          "Gestational Age Range",
+          "Species",
+          "Race / Subspecies",
+          "Text Condition"
+        ]
+      },
+      {
+        "desc": "Critical range for ordinal and continuous observations",
+        "fields": [
+          "Low Value",
+          "High Value"
+        ]
+      },
+      {
+        "desc": "Absolute range for ordinal and continuous observations",
+        "fields": [
+          "Range",
+          "Numeric Change",
+          "Percent Per Change",
+          "Days"
+        ]
+      },
+      {
+        "desc": "Delta Check Criteria",
+        "fields": [
+          "Range",
+          "Numeric Threshold",
+          "Change",
+          "Length Of Time-days"
+        ]
+      },
+      {
+        "desc": "Minimum Meaningful Increments"
+      }
+    ]
+  },
+  "OM3": {
+    "fields": [
+      {
+        "desc": "Segment Type ID"
+      },
+      {
+        "desc": "Sequence Number - Test/ Observation Master File"
+      },
+      {
+        "desc": "Preferred Coding System"
+      },
+      {
+        "desc": "Valid coded answers",
+        "fields": [
+          "Identifier",
+          "Text",
+          "Name Of Coding System",
+          "Alternate Identifier",
+          "Alternate Text",
+          "Name Of Alternate Coding System"
+        ]
+      },
+      {
+        "desc": "Normal test codes for categorical observations",
+        "fields": [
+          "Identifier",
+          "Text",
+          "Name Of Coding System",
+          "Alternate Identifier",
+          "Alternate Text",
+          "Name Of Alternate Coding System"
+        ]
+      },
+      {
+        "desc": "Abnormal test codes for categorical observations",
+        "fields": [
+          "Identifier",
+          "Text",
+          "Name Of Coding System",
+          "Alternate Identifier",
+          "Alternate Text",
+          "Name Of Alternate Coding System"
+        ]
+      },
+      {
+        "desc": "Critical test codes for categorical observations",
+        "fields": [
+          "Identifier",
+          "Text",
+          "Name Of Coding System",
+          "Alternate Identifier",
+          "Alternate Text",
+          "Name Of Alternate Coding System"
+        ]
+      },
+      {
+        "desc": "Data Type"
+      }
+    ]
+  },
+  "OM4": {
+    "fields": [
+      {
+        "desc": "Segment Type ID"
+      },
+      {
+        "desc": "Sequence Number - Test/ Observation Master File"
+      },
+      {
+        "desc": "Derived Specimen"
+      },
+      {
+        "desc": "Container Description"
+      },
+      {
+        "desc": "Container Volume"
+      },
+      {
+        "desc": "Container Units",
+        "fields": [
+          "Identifier",
+          "Text",
+          "Name Of Coding System",
+          "Alternate Identifier",
+          "Alternate Text",
+          "Name Of Alternate Coding System"
+        ]
+      },
+      {
+        "desc": "Specimen",
+        "fields": [
+          "Identifier",
+          "Text",
+          "Name Of Coding System",
+          "Alternate Identifier",
+          "Alternate Text",
+          "Name Of Alternate Coding System"
+        ]
+      },
+      {
+        "desc": "Additive",
+        "fields": [
+          "Identifier",
+          "Text",
+          "Name Of Coding System",
+          "Alternate Identifier",
+          "Alternate Text",
+          "Name Of Alternate Coding System"
+        ]
+      },
+      {
+        "desc": "Preparation"
+      },
+      {
+        "desc": "Special Handling Requirements"
+      },
+      {
+        "desc": "Normal Collection Volume",
+        "fields": [
+          "Quantity",
+          "Units"
+        ]
+      },
+      {
+        "desc": "Minimum Collection Volume",
+        "fields": [
+          "Quantity",
+          "Units"
+        ]
+      },
+      {
+        "desc": "Specimen Requirements"
+      },
+      {
+        "desc": "Specimen Priorities"
+      },
+      {
+        "desc": "Specimen Retention Time",
+        "fields": [
+          "Quantity",
+          "Units"
+        ]
+      }
+    ]
+  },
+  "OM5": {
+    "fields": [
+      {
+        "desc": "Segment Type ID"
+      },
+      {
+        "desc": "Sequence Number - Test/ Observation Master File"
+      },
+      {
+        "desc": "Tests / observations included within an ordered test battery",
+        "fields": [
+          "Identifier",
+          "Text",
+          "Name Of Coding System",
+          "Alternate Identifier",
+          "Alternate Text",
+          "Name Of Alternate Coding System"
+        ]
+      },
+      {
+        "desc": "Observation ID Suffixes"
+      }
+    ]
+  },
+  "OM6": {
+    "fields": [
+      {
+        "desc": "Segment Type ID"
+      },
+      {
+        "desc": "Sequence Number - Test/ Observation Master File"
+      },
+      {
+        "desc": "Derivation Rule"
+      }
+    ]
+  },
+  "ORC": {
+    "fields": [
+      {
+        "desc": "Order Control"
+      },
+      {
+        "desc": "Placer Order Number",
+        "fields": [
+          "Unique Placer Id",
+          "Placer Application"
+        ]
+      },
+      {
+        "desc": "Filler Order Number",
+        "fields": [
+          "Unique Filler Id",
+          "Filler Application ID"
+        ]
+      },
+      {
+        "desc": "Placer Group Number",
+        "fields": [
+          "Unique Group Id",
+          "Placer Application Id"
+        ]
+      },
+      {
+        "desc": "Order Status"
+      },
+      {
+        "desc": "Response Flag"
+      },
+      {
+        "desc": "Quantity / timing",
+        "fields": [
+          "Quantity",
+          "Interval",
+          "Duration",
+          "Start Date/time",
+          "End Date/time",
+          "Priority",
+          "Condition",
+          "Text",
+          "Conjunction",
+          "Order Sequencing"
+        ]
+      },
+      {
+        "desc": "Parent Order",
+        "fields": [
+          "Parent s Placer Order Number",
+          "Parent s Filler Order Number"
+        ]
+      },
+      {
+        "desc": "Date / time of transaction",
+        "fields": [
+          "Time Of An Event",
+          "Degree Of Precision"
+        ]
+      },
+      {
+        "desc": "Entered By",
+        "fields": [
+          "ID Number",
+          "Family Name",
+          "Given Name",
+          "Middle Initial Or Name",
+          "Suffix",
+          "Prefix",
+          "Degree",
+          "Source Table Id",
+          "Adresse",
+          "Telefon",
+          "Faxnummer",
+          "Online-Nummer",
+          "E-Mail"
+        ]
+      },
+      {
+        "desc": "Verified By",
+        "fields": [
+          "ID Number",
+          "Family Name",
+          "Given Name",
+          "Middle Initial Or Name",
+          "Suffix",
+          "Prefix",
+          "Degree",
+          "Source Table Id",
+          "Adresse",
+          "Telefon",
+          "Faxnummer",
+          "Online-Nummer",
+          "E-Mail"
+        ]
+      },
+      {
+        "desc": "Ordering Provider",
+        "fields": [
+          "ID Number",
+          "Family Name",
+          "Given Name",
+          "Middle Initial Or Name",
+          "Suffix",
+          "Prefix",
+          "Degree",
+          "Source Table Id",
+          "Adresse",
+          "Telefon",
+          "Faxnummer",
+          "Online-Nummer",
+          "E-Mail"
+        ]
+      },
+      {
+        "desc": "Enterer's Location",
+        "fields": [
+          "Observation Identifier",
+          "Sub-ID",
+          "Result"
+        ]
+      },
+      {
+        "desc": "Call Back Phone Number"
+      },
+      {
+        "desc": "Order effective date / time",
+        "fields": [
+          "Time Of An Event",
+          "Degree Of Precision"
+        ]
+      },
+      {
+        "desc": "Order Control Code Reason",
+        "fields": [
+          "Identifier",
+          "Text",
+          "Name Of Coding System",
+          "Alternate Identifier",
+          "Alternate Text",
+          "Name Of Alternate Coding System"
+        ]
+      },
+      {
+        "desc": "Entering Organization",
+        "fields": [
+          "Identifier",
+          "Text",
+          "Name Of Coding System",
+          "Alternate Identifier",
+          "Alternate Text",
+          "Name Of Alternate Coding System"
+        ]
+      },
+      {
+        "desc": "Entering Device",
+        "fields": [
+          "Identifier",
+          "Text",
+          "Name Of Coding System",
+          "Alternate Identifier",
+          "Alternate Text",
+          "Name Of Alternate Coding System"
+        ]
+      },
+      {
+        "desc": "Action by",
+        "fields": [
+          "ID Number",
+          "Family Name",
+          "Given Name",
+          "Middle Initial Or Name",
+          "Suffix",
+          "Prefix",
+          "Degree",
+          "Source Table Id",
+          "Adresse",
+          "Telefon",
+          "Faxnummer",
+          "Online-Nummer",
+          "E-Mail"
+        ]
+      }
+    ]
+  },
+  "PID": {
+    "fields": [
+      {
+        "desc": "Set ID - Patient ID"
+      },
+      {
+        "desc": "Patient ID",
+        "fields": [
+          "ID Number",
+          "Check Digit",
+          "Code Identifying The Check Digit Scheme Employed",
+          "Assigning Authority"
+        ]
+      },
+      {
+        "desc": "Patient ID",
+        "fields": [
+          "ID Number",
+          "Check Digit",
+          "Check Digit Scheme",
+          "Facility ID",
+          "Type"
+        ]
+      },
+      {
+        "desc": "Alternate Patient ID"
+      },
+      {
+        "desc": "Patient Name",
+        "fields": [
+          "Family Name",
+          "Given Name",
+          "Middle Initial Or Name",
+          "Suffix",
+          "Prefix",
+          "Degree"
+        ]
+      },
+      {
+        "desc": "Mother's Maiden Name"
+      },
+      {
+        "desc": "Date of Birth",
+        "fields": [
+          "Time Of An Event",
+          "Degree Of Precision"
+        ]
+      },
+      {
+        "desc": "Sex"
+      },
+      {
+        "desc": "Patient Alias",
+        "fields": [
+          "Family Name",
+          "Given Name",
+          "Middle Initial Or Name",
+          "Suffix",
+          "Prefix",
+          "Degree"
+        ]
+      },
+      {
+        "desc": "Race"
+      },
+      {
+        "desc": "Patient Address",
+        "fields": [
+          "Street Address",
+          "Other Designation",
+          "City",
+          "State Or Province",
+          "Zip Or Postal Code",
+          "Country",
+          "Type",
+          "Other Geographic Designation"
+        ]
+      },
+      {
+        "desc": "County code"
+      },
+      {
+        "desc": "Phone Number - Home"
+      },
+      {
+        "desc": "Phone Number - Business"
+      },
+      {
+        "desc": "Language - Patient"
+      },
+      {
+        "desc": "Marital Status"
+      },
+      {
+        "desc": "Religion"
+      },
+      {
+        "desc": "Patient Account Number",
+        "fields": [
+          "ID Number",
+          "Check Digit",
+          "Code Identifying The Check Digit Scheme Employed",
+          "Assigning Authority"
+        ]
+      },
+      {
+        "desc": "Social security number - patient"
+      },
+      {
+        "desc": "Driver's license number - patient",
+        "fields": [
+          "License Number",
+          "Issuing State,province,country"
+        ]
+      },
+      {
+        "desc": "Mother's Identifier",
+        "fields": [
+          "ID Number",
+          "Check Digit",
+          "Code Identifying The Check Digit Scheme Employed",
+          "Assigning Authority"
+        ]
+      },
+      {
+        "desc": "Ethnic Group"
+      },
+      {
+        "desc": "Birth Place"
+      },
+      {
+        "desc": "Multiple Birth Indicator"
+      },
+      {
+        "desc": "Birth Order"
+      },
+      {
+        "desc": "Citizenship"
+      },
+      {
+        "desc": "Veterans Military Status"
+      }
+    ]
+  },
+  "PR1": {
+    "fields": [
+      {
+        "desc": "Set ID - procedure"
+      },
+      {
+        "desc": "Procedure coding method"
+      },
+      {
+        "desc": "Procedure code"
+      },
+      {
+        "desc": "Procedure description"
+      },
+      {
+        "desc": "Procedure date / time",
+        "fields": [
+          "Time Of An Event",
+          "Degree Of Precision"
+        ]
+      },
+      {
+        "desc": "Procedure type"
+      },
+      {
+        "desc": "Procedure minutes"
+      },
+      {
+        "desc": "Anesthesiologist",
+        "fields": [
+          "ID Number",
+          "Family Name",
+          "Given Name",
+          "Middle Initial Or Name",
+          "Suffix",
+          "Prefix",
+          "Degree",
+          "Source Table Id",
+          "Adresse",
+          "Telefon",
+          "Faxnummer",
+          "Online-Nummer",
+          "E-Mail"
+        ]
+      },
+      {
+        "desc": "Anesthesia code"
+      },
+      {
+        "desc": "Anesthesia minutes"
+      },
+      {
+        "desc": "Surgeon",
+        "fields": [
+          "ID Number",
+          "Family Name",
+          "Given Name",
+          "Middle Initial Or Name",
+          "Suffix",
+          "Prefix",
+          "Degree",
+          "Source Table Id",
+          "Adresse",
+          "Telefon",
+          "Faxnummer",
+          "Online-Nummer",
+          "E-Mail"
+        ]
+      },
+      {
+        "desc": "Procedure Practitioner",
+        "fields": [
+          "Procedure Practitioner  ID",
+          "Procedure Practitioner Type"
+        ]
+      },
+      {
+        "desc": "Consent code"
+      },
+      {
+        "desc": "Procedure priority"
+      }
+    ]
+  },
+  "PRA": {
+    "fields": [
+      {
+        "desc": "PRA - primary key value"
+      },
+      {
+        "desc": "Practitioner group",
+        "fields": [
+          "Identifier",
+          "Text",
+          "Name Of Coding System",
+          "Alternate Identifier",
+          "Alternate Text",
+          "Name Of Alternate Coding System"
+        ]
+      },
+      {
+        "desc": "Practitioner Category"
+      },
+      {
+        "desc": "Provider Billing"
+      },
+      {
+        "desc": "Specialty",
+        "fields": [
+          "Specialty Name",
+          "Governing Board",
+          "Eligible Or Certified",
+          "Date Of Certification"
+        ]
+      },
+      {
+        "desc": "Practitioner ID Numbers",
+        "fields": [
+          "ID Number",
+          "Type Of ID Number",
+          "State/other Qualifiying Info"
+        ]
+      },
+      {
+        "desc": "Privileges",
+        "fields": [
+          "Privilege",
+          "Privilege Class",
+          "Expiration Date",
+          "Activation Date"
+        ]
+      }
+    ]
+  },
+  "PV1": {
+    "fields": [
+      {
+        "desc": "Set ID - Patient Visit"
+      },
+      {
+        "desc": "Patient Class"
+      },
+      {
+        "desc": "Assigned Patient Location",
+        "fields": [
+          "Nurse Unit",
+          "Room",
+          "Bed",
+          "Facility ID",
+          "Bed Status",
+          "Etage",
+          "Klinik",
+          "Zentrum"
+        ]
+      },
+      {
+        "desc": "Admission Type"
+      },
+      {
+        "desc": "Preadmit Number"
+      },
+      {
+        "desc": "Prior Patient Location",
+        "fields": [
+          "Nurse Unit",
+          "Room",
+          "Bed",
+          "Facility ID",
+          "Bed Status",
+          "Etage",
+          "Klinik",
+          "Zentrum"
+        ]
+      },
+      {
+        "desc": "Attending Doctor",
+        "fields": [
+          "ID Number",
+          "Family Name",
+          "Given Name",
+          "Middle Initial Or Name",
+          "Suffix",
+          "Prefix",
+          "Degree",
+          "Source Table Id",
+          "Adresse",
+          "Telefon",
+          "Faxnummer",
+          "Online-Nummer",
+          "E-Mail"
+        ]
+      },
+      {
+        "desc": "Referring Doctor",
+        "fields": [
+          "ID Number",
+          "Family Name",
+          "Given Name",
+          "Middle Initial Or Name",
+          "Suffix",
+          "Prefix",
+          "Degree",
+          "Source Table Id",
+          "Adresse",
+          "Telefon",
+          "Faxnummer",
+          "Online-Nummer",
+          "E-Mail"
+        ]
+      },
+      {
+        "desc": "Consulting Doctor",
+        "fields": [
+          "ID Number",
+          "Family Name",
+          "Given Name",
+          "Middle Initial Or Name",
+          "Suffix",
+          "Prefix",
+          "Degree",
+          "Source Table Id",
+          "Adresse",
+          "Telefon",
+          "Faxnummer",
+          "Online-Nummer",
+          "E-Mail"
+        ]
+      },
+      {
+        "desc": "Hospital Service"
+      },
+      {
+        "desc": "Temporary Location",
+        "fields": [
+          "Nurse Unit",
+          "Room",
+          "Bed",
+          "Facility ID",
+          "Bed Status",
+          "Etage",
+          "Klinik",
+          "Zentrum"
+        ]
+      },
+      {
+        "desc": "Preadmit Test Indicator"
+      },
+      {
+        "desc": "Readmission indicator"
+      },
+      {
+        "desc": "Admit Source"
+      },
+      {
+        "desc": "Ambulatory Status"
+      },
+      {
+        "desc": "VIP Indicator"
+      },
+      {
+        "desc": "Admitting Doctor",
+        "fields": [
+          "ID Number",
+          "Family Name",
+          "Given Name",
+          "Middle Initial Or Name",
+          "Suffix",
+          "Prefix",
+          "Degree",
+          "Source Table Id",
+          "Adresse",
+          "Telefon",
+          "Faxnummer",
+          "Online-Nummer",
+          "E-Mail"
+        ]
+      },
+      {
+        "desc": "Patient type"
+      },
+      {
+        "desc": "Visit Number",
+        "fields": [
+          "ID Number",
+          "Check Digit",
+          "Check Digit Scheme",
+          "Facility ID",
+          "Type"
+        ]
+      },
+      {
+        "desc": "Financial Class",
+        "fields": [
+          "Financial Class ID",
+          "Effective Date"
+        ]
+      },
+      {
+        "desc": "Charge Price Indicator"
+      },
+      {
+        "desc": "Courtesy Code"
+      },
+      {
+        "desc": "Credit Rating"
+      },
+      {
+        "desc": "Contract Code"
+      },
+      {
+        "desc": "Contract Effective Date"
+      },
+      {
+        "desc": "Contract Amount"
+      },
+      {
+        "desc": "Contract Period"
+      },
+      {
+        "desc": "Interest Code"
+      },
+      {
+        "desc": "Transfer to bad debt - code"
+      },
+      {
+        "desc": "Transfer to bad debt - date"
+      },
+      {
+        "desc": "Bad Debt Agency Code"
+      },
+      {
+        "desc": "Bad Debt Transfer Amount"
+      },
+      {
+        "desc": "Bad Debt Recovery Amount"
+      },
+      {
+        "desc": "Delete Account Indicator"
+      },
+      {
+        "desc": "Delete Account Date"
+      },
+      {
+        "desc": "Discharge Disposition"
+      },
+      {
+        "desc": "Discharged to Location",
+        "fields": [
+          "Discharge Location",
+          "Effective Date"
+        ]
+      },
+      {
+        "desc": "Diet Type"
+      },
+      {
+        "desc": "Servicing Facility"
+      },
+      {
+        "desc": "Bed Status"
+      },
+      {
+        "desc": "Account Status"
+      },
+      {
+        "desc": "Pending Location",
+        "fields": [
+          "Nurse Unit",
+          "Room",
+          "Bed",
+          "Facility ID",
+          "Bed Status",
+          "Etage",
+          "Klinik",
+          "Zentrum"
+        ]
+      },
+      {
+        "desc": "Prior Temporary Location",
+        "fields": [
+          "Nurse Unit",
+          "Room",
+          "Bed",
+          "Facility ID",
+          "Bed Status",
+          "Etage",
+          "Klinik",
+          "Zentrum"
+        ]
+      },
+      {
+        "desc": "Admit date / time",
+        "fields": [
+          "Time Of An Event",
+          "Degree Of Precision"
+        ]
+      },
+      {
+        "desc": "Discharge date / time",
+        "fields": [
+          "Time Of An Event",
+          "Degree Of Precision"
+        ]
+      },
+      {
+        "desc": "Current Patient Balance"
+      },
+      {
+        "desc": "Total Charges"
+      },
+      {
+        "desc": "Total Adjustments"
+      },
+      {
+        "desc": "Total Payments"
+      },
+      {
+        "desc": "Alternate Visit ID",
+        "fields": [
+          "ID Number",
+          "Check Digit",
+          "Check Digit Scheme",
+          "Facility ID",
+          "Type"
+        ]
+      }
+    ]
+  },
+  "PV2": {
+    "fields": [
+      {
+        "desc": "Prior Pending Location",
+        "fields": [
+          "Nurse Unit",
+          "Room",
+          "Bed",
+          "Facility ID",
+          "Bed Status",
+          "Etage",
+          "Klinik",
+          "Zentrum"
+        ]
+      },
+      {
+        "desc": "Accommodation Code",
+        "fields": [
+          "Identifier",
+          "Text",
+          "Name Of Coding System",
+          "Alternate Identifier",
+          "Alternate Text",
+          "Name Of Alternate Coding System"
+        ]
+      },
+      {
+        "desc": "Admit Reason",
+        "fields": [
+          "Identifier",
+          "Text",
+          "Name Of Coding System",
+          "Alternate Identifier",
+          "Alternate Text",
+          "Name Of Alternate Coding System"
+        ]
+      },
+      {
+        "desc": "Transfer Reason",
+        "fields": [
+          "Identifier",
+          "Text",
+          "Name Of Coding System",
+          "Alternate Identifier",
+          "Alternate Text",
+          "Name Of Alternate Coding System"
+        ]
+      },
+      {
+        "desc": "Patient Valuables"
+      },
+      {
+        "desc": "Patient Valuables Location"
+      },
+      {
+        "desc": "Visit User Code"
+      },
+      {
+        "desc": "Expected Admit Date"
+      },
+      {
+        "desc": "Expected Discharge Date"
+      }
+    ]
+  },
+  "QRD": {
+    "fields": [
+      {
+        "desc": "Query date / time",
+        "fields": [
+          "Time Of An Event",
+          "Degree Of Precision"
+        ]
+      },
+      {
+        "desc": "Query Format Code"
+      },
+      {
+        "desc": "Query Priority"
+      },
+      {
+        "desc": "Query ID"
+      },
+      {
+        "desc": "Deferred Response Type"
+      },
+      {
+        "desc": "Deferred response date / time",
+        "fields": [
+          "Time Of An Event",
+          "Degree Of Precision"
+        ]
+      },
+      {
+        "desc": "Quantity Limited Request",
+        "fields": [
+          "Quantity",
+          "Units"
+        ]
+      },
+      {
+        "desc": "Who Subject Filter"
+      },
+      {
+        "desc": "What Subject Filter"
+      },
+      {
+        "desc": "What Department Data Code"
+      },
+      {
+        "desc": "What data code value qualifier",
+        "fields": [
+          "First Data Code Value",
+          "Last Data Code Calue"
+        ]
+      },
+      {
+        "desc": "Query Results Level"
+      }
+    ]
+  },
+  "QRF": {
+    "fields": [
+      {
+        "desc": "Where Subject Filter"
+      },
+      {
+        "desc": "When data start date / time",
+        "fields": [
+          "Time Of An Event",
+          "Degree Of Precision"
+        ]
+      },
+      {
+        "desc": "When data end date / time",
+        "fields": [
+          "Time Of An Event",
+          "Degree Of Precision"
+        ]
+      },
+      {
+        "desc": "What User Qualifier"
+      },
+      {
+        "desc": "Other QRY Subject Filter"
+      },
+      {
+        "desc": "Which date / time qualifier"
+      },
+      {
+        "desc": "Which date / time status qualifier"
+      },
+      {
+        "desc": "Date / time selection qualifier"
+      }
+    ]
+  },
+  "RQ1": {
+    "fields": [
+      {
+        "desc": "Anticipated Price"
+      },
+      {
+        "desc": "Manufacturer ID",
+        "fields": [
+          "Identifier",
+          "Text",
+          "Name Of Coding System",
+          "Alternate Identifier",
+          "Alternate Text",
+          "Name Of Alternate Coding System"
+        ]
+      },
+      {
+        "desc": "Manufacturer's Catalog"
+      },
+      {
+        "desc": "Vendor ID",
+        "fields": [
+          "Identifier",
+          "Text",
+          "Name Of Coding System",
+          "Alternate Identifier",
+          "Alternate Text",
+          "Name Of Alternate Coding System"
+        ]
+      },
+      {
+        "desc": "Vendor Catalog"
+      },
+      {
+        "desc": "Taxable"
+      },
+      {
+        "desc": "Substitute Allowed"
+      }
+    ]
+  },
+  "RQD": {
+    "fields": [
+      {
+        "desc": "Requisition Line Number"
+      },
+      {
+        "desc": "Item Code - Internal",
+        "fields": [
+          "Identifier",
+          "Text",
+          "Name Of Coding System",
+          "Alternate Identifier",
+          "Alternate Text",
+          "Name Of Alternate Coding System"
+        ]
+      },
+      {
+        "desc": "Item Code - External",
+        "fields": [
+          "Identifier",
+          "Text",
+          "Name Of Coding System",
+          "Alternate Identifier",
+          "Alternate Text",
+          "Name Of Alternate Coding System"
+        ]
+      },
+      {
+        "desc": "Hospital Item Code",
+        "fields": [
+          "Identifier",
+          "Text",
+          "Name Of Coding System",
+          "Alternate Identifier",
+          "Alternate Text",
+          "Name Of Alternate Coding System"
+        ]
+      },
+      {
+        "desc": "Requisition Quantity"
+      },
+      {
+        "desc": "Requisition Unit of measure",
+        "fields": [
+          "Identifier",
+          "Text",
+          "Name Of Coding System",
+          "Alternate Identifier",
+          "Alternate Text",
+          "Name Of Alternate Coding System"
+        ]
+      },
+      {
+        "desc": "Department cost center"
+      },
+      {
+        "desc": "Item Natural Account Code"
+      },
+      {
+        "desc": "Deliver-to ID",
+        "fields": [
+          "Identifier",
+          "Text",
+          "Name Of Coding System",
+          "Alternate Identifier",
+          "Alternate Text",
+          "Name Of Alternate Coding System"
+        ]
+      },
+      {
+        "desc": "Date Needed"
+      }
+    ]
+  },
+  "RXA": {
+    "fields": [
+      {
+        "desc": "Give Sub-ID Counter"
+      },
+      {
+        "desc": "Administration Sub-ID Counter"
+      },
+      {
+        "desc": "Date / time start of administration",
+        "fields": [
+          "Time Of An Event",
+          "Degree Of Precision"
+        ]
+      },
+      {
+        "desc": "Date / time end of administration",
+        "fields": [
+          "Time Of An Event",
+          "Degree Of Precision"
+        ]
+      },
+      {
+        "desc": "Administered Code",
+        "fields": [
+          "Identifier",
+          "Text",
+          "Name Of Coding System",
+          "Alternate Identifier",
+          "Alternate Text",
+          "Name Of Alternate Coding System"
+        ]
+      },
+      {
+        "desc": "Administered Amount"
+      },
+      {
+        "desc": "Administered Units",
+        "fields": [
+          "Identifier",
+          "Text",
+          "Name Of Coding System",
+          "Alternate Identifier",
+          "Alternate Text",
+          "Name Of Alternate Coding System"
+        ]
+      },
+      {
+        "desc": "Administered Dosage Form",
+        "fields": [
+          "Identifier",
+          "Text",
+          "Name Of Coding System",
+          "Alternate Identifier",
+          "Alternate Text",
+          "Name Of Alternate Coding System"
+        ]
+      },
+      {
+        "desc": "Administration Notes"
+      },
+      {
+        "desc": "Administering Provider",
+        "fields": [
+          "ID Number",
+          "Family Name",
+          "Given Name",
+          "Middle Initial Or Name",
+          "Suffix",
+          "Prefix",
+          "Degree",
+          "Source Table Id",
+          "Adresse",
+          "Telefon",
+          "Faxnummer",
+          "Online-Nummer",
+          "E-Mail"
+        ]
+      },
+      {
+        "desc": "Administered-at Location",
+        "fields": [
+          "Dispense / Deliver To Location",
+          "Location"
+        ]
+      },
+      {
+        "desc": "Administered Per"
+      }
+    ]
+  },
+  "RXC": {
+    "fields": [
+      {
+        "desc": "RX Component Type"
+      },
+      {
+        "desc": "Component Code",
+        "fields": [
+          "Identifier",
+          "Text",
+          "Name Of Coding System",
+          "Alternate Identifier",
+          "Alternate Text",
+          "Name Of Alternate Coding System"
+        ]
+      },
+      {
+        "desc": "Component Amount"
+      },
+      {
+        "desc": "Component Units",
+        "fields": [
+          "Identifier",
+          "Text",
+          "Name Of Coding System",
+          "Alternate Identifier",
+          "Alternate Text",
+          "Name Of Alternate Coding System"
+        ]
+      }
+    ]
+  },
+  "RXD": {
+    "fields": [
+      {
+        "desc": "Dispense Sub-ID Counter"
+      },
+      {
+        "desc": "Dispense / give code",
+        "fields": [
+          "Identifier",
+          "Text",
+          "Name Of Coding System",
+          "Alternate Identifier",
+          "Alternate Text",
+          "Name Of Alternate Coding System"
+        ]
+      },
+      {
+        "desc": "Date / time dispensed",
+        "fields": [
+          "Time Of An Event",
+          "Degree Of Precision"
+        ]
+      },
+      {
+        "desc": "Actual Dispense Amount"
+      },
+      {
+        "desc": "Actual Dispense Units",
+        "fields": [
+          "Identifier",
+          "Text",
+          "Name Of Coding System",
+          "Alternate Identifier",
+          "Alternate Text",
+          "Name Of Alternate Coding System"
+        ]
+      },
+      {
+        "desc": "Actual Dosage Form",
+        "fields": [
+          "Identifier",
+          "Text",
+          "Name Of Coding System",
+          "Alternate Identifier",
+          "Alternate Text",
+          "Name Of Alternate Coding System"
+        ]
+      },
+      {
+        "desc": "Prescription Number"
+      },
+      {
+        "desc": "Number of Refills Remaining"
+      },
+      {
+        "desc": "Dispense Notes"
+      },
+      {
+        "desc": "Dispensing Provider",
+        "fields": [
+          "ID Number",
+          "Family Name",
+          "Given Name",
+          "Middle Initial Or Name",
+          "Suffix",
+          "Prefix",
+          "Degree",
+          "Source Table Id",
+          "Adresse",
+          "Telefon",
+          "Faxnummer",
+          "Online-Nummer",
+          "E-Mail"
+        ]
+      },
+      {
+        "desc": "Substitution Status"
+      },
+      {
+        "desc": "Total Daily Dose",
+        "fields": [
+          "Quantity",
+          "Units"
+        ]
+      },
+      {
+        "desc": "Deliver-to location",
+        "fields": [
+          "Dispense / Deliver To Location",
+          "Location"
+        ]
+      },
+      {
+        "desc": "Needs Human Review"
+      },
+      {
+        "desc": "Pharmacy Special Dispensing Instructions",
+        "fields": [
+          "Identifier",
+          "Text",
+          "Name Of Coding System",
+          "Alternate Identifier",
+          "Alternate Text",
+          "Name Of Alternate Coding System"
+        ]
+      }
+    ]
+  },
+  "RXE": {
+    "fields": [
+      {
+        "desc": "Quantity / timing",
+        "fields": [
+          "Quantity",
+          "Interval",
+          "Duration",
+          "Start Date/time",
+          "End Date/time",
+          "Priority",
+          "Condition",
+          "Text",
+          "Conjunction",
+          "Order Sequencing"
+        ]
+      },
+      {
+        "desc": "Give Code",
+        "fields": [
+          "Identifier",
+          "Text",
+          "Name Of Coding System",
+          "Alternate Identifier",
+          "Alternate Text",
+          "Name Of Alternate Coding System"
+        ]
+      },
+      {
+        "desc": "Give Amount - Minimum"
+      },
+      {
+        "desc": "Give Amount - Maximum"
+      },
+      {
+        "desc": "Give Units",
+        "fields": [
+          "Identifier",
+          "Text",
+          "Name Of Coding System",
+          "Alternate Identifier",
+          "Alternate Text",
+          "Name Of Alternate Coding System"
+        ]
+      },
+      {
+        "desc": "Give Dosage Form",
+        "fields": [
+          "Identifier",
+          "Text",
+          "Name Of Coding System",
+          "Alternate Identifier",
+          "Alternate Text",
+          "Name Of Alternate Coding System"
+        ]
+      },
+      {
+        "desc": "Provider's Administration Instructions",
+        "fields": [
+          "Identifier",
+          "Text",
+          "Name Of Coding System",
+          "Alternate Identifier",
+          "Alternate Text",
+          "Name Of Alternate Coding System"
+        ]
+      },
+      {
+        "desc": "Deliver-to location",
+        "fields": [
+          "Dispense / Deliver To Location",
+          "Location"
+        ]
+      },
+      {
+        "desc": "Substitution Status"
+      },
+      {
+        "desc": "Dispense Amount"
+      },
+      {
+        "desc": "Dispense Units",
+        "fields": [
+          "Identifier",
+          "Text",
+          "Name Of Coding System",
+          "Alternate Identifier",
+          "Alternate Text",
+          "Name Of Alternate Coding System"
+        ]
+      },
+      {
+        "desc": "Number of Refills"
+      },
+      {
+        "desc": "Ordering Provider's DEA Number",
+        "fields": [
+          "ID Number",
+          "Family Name",
+          "Given Name",
+          "Middle Initial Or Name",
+          "Suffix",
+          "Prefix",
+          "Degree",
+          "Source Table Id",
+          "Adresse",
+          "Telefon",
+          "Faxnummer",
+          "Online-Nummer",
+          "E-Mail"
+        ]
+      },
+      {
+        "desc": "Pharmacist Verifier ID",
+        "fields": [
+          "ID Number",
+          "Family Name",
+          "Given Name",
+          "Middle Initial Or Name",
+          "Suffix",
+          "Prefix",
+          "Degree",
+          "Source Table Id",
+          "Adresse",
+          "Telefon",
+          "Faxnummer",
+          "Online-Nummer",
+          "E-Mail"
+        ]
+      },
+      {
+        "desc": "Prescription Number"
+      },
+      {
+        "desc": "Number of Refills Remaining"
+      },
+      {
+        "desc": "Number of refills / doses dispensed"
+      },
+      {
+        "desc": "Date / time of most recent refill or dose dispensed",
+        "fields": [
+          "Time Of An Event",
+          "Degree Of Precision"
+        ]
+      },
+      {
+        "desc": "Total Daily Dose",
+        "fields": [
+          "Quantity",
+          "Units"
+        ]
+      },
+      {
+        "desc": "Needs Human Review"
+      },
+      {
+        "desc": "Pharmacy Special Dispensing Instructions",
+        "fields": [
+          "Identifier",
+          "Text",
+          "Name Of Coding System",
+          "Alternate Identifier",
+          "Alternate Text",
+          "Name Of Alternate Coding System"
+        ]
+      },
+      {
+        "desc": "Give Per"
+      },
+      {
+        "desc": "Give Rate Amount",
+        "fields": [
+          "Identifier",
+          "Text",
+          "Name Of Coding System",
+          "Alternate Identifier",
+          "Alternate Text",
+          "Name Of Alternate Coding System"
+        ]
+      },
+      {
+        "desc": "Give Rate Units",
+        "fields": [
+          "Identifier",
+          "Text",
+          "Name Of Coding System",
+          "Alternate Identifier",
+          "Alternate Text",
+          "Name Of Alternate Coding System"
+        ]
+      }
+    ]
+  },
+  "RXG": {
+    "fields": [
+      {
+        "desc": "Give Sub-ID Counter"
+      },
+      {
+        "desc": "Dispense Sub-ID Counter"
+      },
+      {
+        "desc": "Quantity / timing",
+        "fields": [
+          "Quantity",
+          "Interval",
+          "Duration",
+          "Start Date/time",
+          "End Date/time",
+          "Priority",
+          "Condition",
+          "Text",
+          "Conjunction",
+          "Order Sequencing"
+        ]
+      },
+      {
+        "desc": "Give Code",
+        "fields": [
+          "Identifier",
+          "Text",
+          "Name Of Coding System",
+          "Alternate Identifier",
+          "Alternate Text",
+          "Name Of Alternate Coding System"
+        ]
+      },
+      {
+        "desc": "Give Amount - Minimum"
+      },
+      {
+        "desc": "Give Amount - Maximum"
+      },
+      {
+        "desc": "Give Units",
+        "fields": [
+          "Identifier",
+          "Text",
+          "Name Of Coding System",
+          "Alternate Identifier",
+          "Alternate Text",
+          "Name Of Alternate Coding System"
+        ]
+      },
+      {
+        "desc": "Give Dosage Form",
+        "fields": [
+          "Identifier",
+          "Text",
+          "Name Of Coding System",
+          "Alternate Identifier",
+          "Alternate Text",
+          "Name Of Alternate Coding System"
+        ]
+      },
+      {
+        "desc": "Administration Notes"
+      },
+      {
+        "desc": "Substitution Status"
+      },
+      {
+        "desc": "Deliver-to location",
+        "fields": [
+          "Dispense / Deliver To Location",
+          "Location"
+        ]
+      },
+      {
+        "desc": "Needs Human Review"
+      },
+      {
+        "desc": "Pharmacy Special Administration Instructions",
+        "fields": [
+          "Identifier",
+          "Text",
+          "Name Of Coding System",
+          "Alternate Identifier",
+          "Alternate Text",
+          "Name Of Alternate Coding System"
+        ]
+      },
+      {
+        "desc": "Give Per"
+      },
+      {
+        "desc": "Give Rate Amount",
+        "fields": [
+          "Identifier",
+          "Text",
+          "Name Of Coding System",
+          "Alternate Identifier",
+          "Alternate Text",
+          "Name Of Alternate Coding System"
+        ]
+      },
+      {
+        "desc": "Give Rate Units",
+        "fields": [
+          "Identifier",
+          "Text",
+          "Name Of Coding System",
+          "Alternate Identifier",
+          "Alternate Text",
+          "Name Of Alternate Coding System"
+        ]
+      }
+    ]
+  },
+  "RXO": {
+    "fields": [
+      {
+        "desc": "Requested Give Code",
+        "fields": [
+          "Identifier",
+          "Text",
+          "Name Of Coding System",
+          "Alternate Identifier",
+          "Alternate Text",
+          "Name Of Alternate Coding System"
+        ]
+      },
+      {
+        "desc": "Requested Give Amount - Minimum"
+      },
+      {
+        "desc": "Requested Give Amount - Maximum"
+      },
+      {
+        "desc": "Requested Give Units",
+        "fields": [
+          "Identifier",
+          "Text",
+          "Name Of Coding System",
+          "Alternate Identifier",
+          "Alternate Text",
+          "Name Of Alternate Coding System"
+        ]
+      },
+      {
+        "desc": "Requested Dosage Form",
+        "fields": [
+          "Identifier",
+          "Text",
+          "Name Of Coding System",
+          "Alternate Identifier",
+          "Alternate Text",
+          "Name Of Alternate Coding System"
+        ]
+      },
+      {
+        "desc": "Provider's Pharmacy Instructions",
+        "fields": [
+          "Identifier",
+          "Text",
+          "Name Of Coding System",
+          "Alternate Identifier",
+          "Alternate Text",
+          "Name Of Alternate Coding System"
+        ]
+      },
+      {
+        "desc": "Provider's Administration Instructions",
+        "fields": [
+          "Identifier",
+          "Text",
+          "Name Of Coding System",
+          "Alternate Identifier",
+          "Alternate Text",
+          "Name Of Alternate Coding System"
+        ]
+      },
+      {
+        "desc": "Deliver-to location",
+        "fields": [
+          "Dispense / Deliver To Location",
+          "Location"
+        ]
+      },
+      {
+        "desc": "Allow Substitutions"
+      },
+      {
+        "desc": "Requested Dispense Code",
+        "fields": [
+          "Identifier",
+          "Text",
+          "Name Of Coding System",
+          "Alternate Identifier",
+          "Alternate Text",
+          "Name Of Alternate Coding System"
+        ]
+      },
+      {
+        "desc": "Requested Dispense Amount"
+      },
+      {
+        "desc": "Requested Dispense Units",
+        "fields": [
+          "Identifier",
+          "Text",
+          "Name Of Coding System",
+          "Alternate Identifier",
+          "Alternate Text",
+          "Name Of Alternate Coding System"
+        ]
+      },
+      {
+        "desc": "Number of Refills"
+      },
+      {
+        "desc": "Ordering Provider's DEA Number",
+        "fields": [
+          "ID Number",
+          "Family Name",
+          "Given Name",
+          "Middle Initial Or Name",
+          "Suffix",
+          "Prefix",
+          "Degree",
+          "Source Table Id",
+          "Adresse",
+          "Telefon",
+          "Faxnummer",
+          "Online-Nummer",
+          "E-Mail"
+        ]
+      },
+      {
+        "desc": "Pharmacist Verifier ID",
+        "fields": [
+          "ID Number",
+          "Family Name",
+          "Given Name",
+          "Middle Initial Or Name",
+          "Suffix",
+          "Prefix",
+          "Degree",
+          "Source Table Id",
+          "Adresse",
+          "Telefon",
+          "Faxnummer",
+          "Online-Nummer",
+          "E-Mail"
+        ]
+      },
+      {
+        "desc": "Needs Human Review"
+      },
+      {
+        "desc": "Requested Give Per"
+      }
+    ]
+  },
+  "RXR": {
+    "fields": [
+      {
+        "desc": "Route",
+        "fields": [
+          "Identifier",
+          "Text",
+          "Name Of Coding System",
+          "Alternate Identifier",
+          "Alternate Text",
+          "Name Of Alternate Coding System"
+        ]
+      },
+      {
+        "desc": "Site",
+        "fields": [
+          "Identifier",
+          "Text",
+          "Name Of Coding System",
+          "Alternate Identifier",
+          "Alternate Text",
+          "Name Of Alternate Coding System"
+        ]
+      },
+      {
+        "desc": "Administration Device",
+        "fields": [
+          "Identifier",
+          "Text",
+          "Name Of Coding System",
+          "Alternate Identifier",
+          "Alternate Text",
+          "Name Of Alternate Coding System"
+        ]
+      },
+      {
+        "desc": "Administration Method",
+        "fields": [
+          "Identifier",
+          "Text",
+          "Name Of Coding System",
+          "Alternate Identifier",
+          "Alternate Text",
+          "Name Of Alternate Coding System"
+        ]
+      }
+    ]
+  },
+  "STF": {
+    "fields": [
+      {
+        "desc": "STF - primary key value",
+        "fields": [
+          "Identifier",
+          "Text",
+          "Name Of Coding System",
+          "Alternate Identifier",
+          "Alternate Text",
+          "Name Of Alternate Coding System"
+        ]
+      },
+      {
+        "desc": "Staff ID Code",
+        "fields": [
+          "Identifier",
+          "Text",
+          "Name Of Coding System",
+          "Alternate Identifier",
+          "Alternate Text",
+          "Name Of Alternate Coding System"
+        ]
+      },
+      {
+        "desc": "Staff Name",
+        "fields": [
+          "Family Name",
+          "Given Name",
+          "Middle Initial Or Name",
+          "Suffix",
+          "Prefix",
+          "Degree"
+        ]
+      },
+      {
+        "desc": "Staff Type"
+      },
+      {
+        "desc": "Sex"
+      },
+      {
+        "desc": "Date of Birth",
+        "fields": [
+          "Time Of An Event",
+          "Degree Of Precision"
+        ]
+      },
+      {
+        "desc": "Active / inactive"
+      },
+      {
+        "desc": "Department",
+        "fields": [
+          "Identifier",
+          "Text",
+          "Name Of Coding System",
+          "Alternate Identifier",
+          "Alternate Text",
+          "Name Of Alternate Coding System"
+        ]
+      },
+      {
+        "desc": "Service",
+        "fields": [
+          "Identifier",
+          "Text",
+          "Name Of Coding System",
+          "Alternate Identifier",
+          "Alternate Text",
+          "Name Of Alternate Coding System"
+        ]
+      },
+      {
+        "desc": "Phone"
+      },
+      {
+        "desc": "Office / home address",
+        "fields": [
+          "Street Address",
+          "Other Designation",
+          "City",
+          "State Or Province",
+          "Zip Or Postal Code",
+          "Country",
+          "Type",
+          "Other Geographic Designation"
+        ]
+      },
+      {
+        "desc": "Activation Date",
+        "fields": [
+          "Date",
+          "Institution Name"
+        ]
+      },
+      {
+        "desc": "Inactivation Date",
+        "fields": [
+          "Date",
+          "Institution Name"
+        ]
+      },
+      {
+        "desc": "Backup Person ID",
+        "fields": [
+          "Identifier",
+          "Text",
+          "Name Of Coding System",
+          "Alternate Identifier",
+          "Alternate Text",
+          "Name Of Alternate Coding System"
+        ]
+      },
+      {
+        "desc": "E-mail Address"
+      },
+      {
+        "desc": "Preferred method of Contact"
+      }
+    ]
+  },
+  "UB1": {
+    "fields": [
+      {
+        "desc": "Set ID - UB82"
+      },
+      {
+        "desc": "Blood deductible"
+      },
+      {
+        "desc": "Blood furnished pints of"
+      },
+      {
+        "desc": "Blood replaced pints"
+      },
+      {
+        "desc": "Blood not replaced pints"
+      },
+      {
+        "desc": "Co-insurance days"
+      },
+      {
+        "desc": "Condition code"
+      },
+      {
+        "desc": "Covered days"
+      },
+      {
+        "desc": "Non-covered days"
+      },
+      {
+        "desc": "Value amount and code",
+        "fields": [
+          "Value Code",
+          "Value Amount"
+        ]
+      },
+      {
+        "desc": "Number of grace days"
+      },
+      {
+        "desc": "Special program indicator"
+      },
+      {
+        "desc": "PSRO / UR approval indicator"
+      },
+      {
+        "desc": "PSRO / UR approved stay - from"
+      },
+      {
+        "desc": "PSRO / UR approved stay - to"
+      },
+      {
+        "desc": "Occurrence",
+        "fields": [
+          "Occurrence Code",
+          "Occurrence Date"
+        ]
+      },
+      {
+        "desc": "Occurrence span"
+      },
+      {
+        "desc": "Occurrence span start date"
+      },
+      {
+        "desc": "Occurrence span end date"
+      },
+      {
+        "desc": "UB-82 locator 2"
+      },
+      {
+        "desc": "UB-82 locator 9"
+      },
+      {
+        "desc": "UB-82 locator 27"
+      },
+      {
+        "desc": "UB-82 locator 45"
+      }
+    ]
+  },
+  "UB2": {
+    "fields": [
+      {
+        "desc": "Set ID - UB92"
+      },
+      {
+        "desc": "Co-insurance days"
+      },
+      {
+        "desc": "Condition code"
+      },
+      {
+        "desc": "Covered days"
+      },
+      {
+        "desc": "Non-covered days"
+      },
+      {
+        "desc": "Value amount and code",
+        "fields": [
+          "Value Code",
+          "Value Amount"
+        ]
+      },
+      {
+        "desc": "Occurrence code and date",
+        "fields": [
+          "Occurrence Code",
+          "Occurrence Date"
+        ]
+      },
+      {
+        "desc": "Occurrence span code / dates",
+        "fields": [
+          "Occurrence Span Code",
+          "Occurrence Span Start Date",
+          "Occurrence Span Stop Date"
+        ]
+      },
+      {
+        "desc": "UB92 locator 2"
+      },
+      {
+        "desc": "UB92 locator 11"
+      },
+      {
+        "desc": "UB92 locator 31"
+      },
+      {
+        "desc": "Document control number"
+      },
+      {
+        "desc": "UB92 locator 49"
+      },
+      {
+        "desc": "UB92 locator 56"
+      },
+      {
+        "desc": "UB92 locator 57"
+      },
+      {
+        "desc": "UB92 Locator 78"
+      }
+    ]
+  },
+  "URD": {
+    "fields": [
+      {
+        "desc": "R/U date / time",
+        "fields": [
+          "Time Of An Event",
+          "Degree Of Precision"
+        ]
+      },
+      {
+        "desc": "Report Priority"
+      },
+      {
+        "desc": "R/U Who Subject Definition"
+      },
+      {
+        "desc": "R/U What Subject Definition"
+      },
+      {
+        "desc": "R/U What Department Code"
+      },
+      {
+        "desc": "R/U display / print locations"
+      },
+      {
+        "desc": "R/U Results Level"
+      }
+    ]
+  },
+  "URS": {
+    "fields": [
+      {
+        "desc": "R/U Where Subject Definition"
+      },
+      {
+        "desc": "R/U when data start date / time",
+        "fields": [
+          "Time Of An Event",
+          "Degree Of Precision"
+        ]
+      },
+      {
+        "desc": "R/U when data end date / time",
+        "fields": [
+          "Time Of An Event",
+          "Degree Of Precision"
+        ]
+      },
+      {
+        "desc": "R/U What User Qualifier"
+      },
+      {
+        "desc": "R/U Other Results Subject Definition"
+      },
+      {
+        "desc": "R/U which date / time qualifier"
+      },
+      {
+        "desc": "R/U which date / time status qualifier"
+      },
+      {
+        "desc": "R/U date / time selection qualifier"
+      }
+    ]
+  }
+}

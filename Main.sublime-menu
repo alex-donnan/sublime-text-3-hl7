@@ -17,7 +17,7 @@
                         [
                             {
                                 "command": "edit_settings", "args": {
-                                    "base_file": "${packages}/Sublime-Text-3---HL7-Plug-In/Sublime HL7.sublime-settings",
+                                    "base_file": "${packages}/sublime-text-3-hl7/Sublime HL7.sublime-settings",
                                     "default": "{\n$0\n}\n"
                                 },
                                 "caption": "Settings"
@@ -27,14 +27,14 @@
                                 "caption": "GitHub Repository",
                                 "command": "export_html_open_site",
                                 "args": {
-                                    "url": "https://github.com/cdgramos/Sublime-Text-3---HL7-Plug-In/"
+                                    "url": "https://github.com/adonnan/sublime-text-3-hl7/"
                                 }
                             },
                             {
                                 "caption": "Issue Reporting",
                                 "command": "export_html_open_site",
                                 "args": {
-                                    "url": "https://github.com/cdgramos/Sublime-Text-3---HL7-Plug-In/issues/"
+                                    "url": "https://github.com/adonnan/sublime-text-3-hl7/issues/"
                                 }
                             }
                         ]
