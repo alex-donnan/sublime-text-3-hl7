@@ -8,7 +8,7 @@ from .lib.hl7TextUtils import *
 
 hl7EventList = hl7Event("","")
 hl7EventList = hl7EventList.loadEventList()
-hl7SegmentList = hl7Segment("","",{})
+hl7SegmentList = hl7Segment("","")
 hl7SegmentList = hl7SegmentList.loadSegmentList()
 
 STATUS_BAR_HL7 = 'StatusBarHL7'
@@ -143,7 +143,7 @@ class hl7inspectorCommand(sublime_plugin.TextCommand):
 		segmentCode = ""
 
 		#Segment
-		selectedSegment = self.view.substr(self.view.line(self.view.sel()[0]))
+		selectedSegment = line
 		fields = selectedSegment.split('|')
 		fields = re.split(r'(?<!\\)(?:\\\\)*\|', selectedSegment)
 		fieldId = 0
@@ -151,7 +151,7 @@ class hl7inspectorCommand(sublime_plugin.TextCommand):
 		subComponentId = 1
 
 		for segmentItem in hl7SegmentList:
-			if (segmentItem.code == fields[0]):
+			if segmentItem.code == fields[0]:
 				header = segmentItem.code + " - " + segmentItem.description
 				segmentCode = segmentItem.code
 				segmentFields = segmentItem.fields["fields"]
@@ -184,14 +184,15 @@ class hl7inspectorCommand(sublime_plugin.TextCommand):
 
 										try:
 											fieldName = segmentFields[fieldId-1]['desc']
-											print(fieldName)
 										except:
 											fieldName = ""
 			
 										if fieldId > 0:
-											# if segmentFields[fieldId-1].get('fields'):
-											# 	fieldName = segmentFields[fieldId-1]['fields'][componentId]
-											body = body + '<br>' + str(fieldId) + "." + str(componentId) + " : " + fieldName + "(" + str(subComponentId) + ") - " + subComponent
+											try:
+												fieldName = segmentFields[fieldCounter-1]['fields'][componentId-1]
+											except:
+												print('Could not get subcomponent')
+											body = body + '<br>' + str(fieldId) + "." + str(componentId) + " - " + fieldName + "(" + str(subComponentId) + ") : " + subComponent
 
 									subComponentId = subComponentId + 1
 								subComponentId = 1
@@ -212,19 +213,20 @@ class hl7inspectorCommand(sublime_plugin.TextCommand):
 
 								try:
 									fieldName = segmentFields[fieldCounter-1]['desc']
-									print(fieldName)
 								except:
 									fieldName = ""
 
 								if fieldCounter > 0:
 									if totalCircunflex > 0:
 										for tillItem in till:
-											# if segmentFields[fieldCounter-1].get('fields'):
-											# 	fieldName = segmentFields[fieldCounter-1]['fields'][componentId]
-											body = body + '<br>' + str(fieldCounter) + "." + str(componentId) + " : " + fieldName + " - " + tillItem
+											try:
+												fieldName = segmentFields[fieldCounter-1]['fields'][componentId-1]
+											except:
+												 
+											body = body + '<br>' + str(fieldCounter) + "." + str(componentId) + " - " + fieldName + " : " + tillItem
 									else:
 										for tillItem in till:
-											body = body + '<br>' + str(fieldCounter) + " : " + fieldName + " - " + tillItem
+											body = body + '<br>' + str(fieldCounter) + " - " + fieldName + " : " + tillItem
 
 						componentId = componentId + 1
 					componentId = 1
