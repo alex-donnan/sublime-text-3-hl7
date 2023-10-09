@@ -222,7 +222,7 @@ class hl7inspectorCommand(sublime_plugin.TextCommand):
 											try:
 												fieldName = segmentFields[fieldCounter-1]['fields'][componentId-1]
 											except:
-												 
+												print('Could not get subcomponent')												 
 											body = body + '<br>' + str(fieldCounter) + "." + str(componentId) + " - " + fieldName + " : " + tillItem
 									else:
 										for tillItem in till:
