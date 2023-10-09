@@ -9,7 +9,7 @@ from .lib.hl7TextUtils import *
 hl7EventList = hl7Event("","")
 hl7EventList = hl7EventList.loadEventList()
 hl7SegmentList = hl7Segment("","")
-hl7SegmentList = hl7SegmentList.loadSegmentList()
+hl7SegmentList = hl7SegmentList.loadSegmentList(version="2.5.1")
 
 STATUS_BAR_HL7 = 'StatusBarHL7'
 
