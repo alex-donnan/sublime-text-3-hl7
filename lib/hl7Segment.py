@@ -15,10 +15,11 @@ class hl7Segment(object):
 	# Load a segment and fields data based on version number
 	def loadSegmentDefinition(self, version):
 		import json
+		import sublime
 
-		file = open('./lib/definitions/' + version + '.json', 'r')
-		all_fields = json.load(file)
 		try:
+			file = open(sublime.find_resources(version + '.json')[0], 'r')
+			all_fields = json.load(file)
 			self.fields = all_fields[self.code]
 		except:
 			pass
