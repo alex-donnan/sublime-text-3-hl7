@@ -143,7 +143,7 @@ class hl7inspectorCommand(sublime_plugin.TextCommand):
 		segmentCode = ""
 
 		#Segment
-		selectedSegment = line
+		selectedSegment = self.view.substr(self.view.line(self.view.sel()[0]))
 		fields = selectedSegment.split('|')
 		fields = re.split(r'(?<!\\)(?:\\\\)*\|', selectedSegment)
 		fieldId = 0
