@@ -192,7 +192,7 @@ class hl7inspectorCommand(sublime_plugin.TextCommand):
 												fieldName = segmentFields[fieldCounter-1]['fields'][componentId-1]
 											except:
 												fieldName = fieldName
-											body = body + '<br>' + str(fieldId) + "." + str(componentId) + " - " + fieldName + "(" + str(subComponentId) + ") : " + subComponent
+											body = body + '<br><b style="color:#33ccff;">' + str(fieldId) + "." + str(componentId) + '</b> - <b style="color:#ffbf00;">' + fieldName + "(" + str(subComponentId) + ")</b> : " + subComponent
 
 									subComponentId = subComponentId + 1
 								subComponentId = 1
@@ -223,10 +223,10 @@ class hl7inspectorCommand(sublime_plugin.TextCommand):
 												fieldName = segmentFields[fieldCounter-1]['fields'][componentId-1]
 											except:
 												fieldName = fieldName										 
-											body = body + '<br>' + str(fieldCounter) + "." + str(componentId) + " - " + fieldName + " : " + tillItem
+											body = body + '<br><b style="color:#33ccff;">' + str(fieldCounter) + "." + str(componentId) + '</b> - <b style="color:#ffbf00;">' + fieldName + "</b> : " + tillItem
 									else:
 										for tillItem in till:
-											body = body + '<br>' + str(fieldCounter) + " - " + fieldName + " : " + tillItem
+											body = body + '<br><b style="color:#33ccff;">' + str(fieldCounter) + '</b> - <b style="color:#ffbf00;">' + fieldName + "</b> : " + tillItem
 
 						componentId = componentId + 1
 					componentId = 1
