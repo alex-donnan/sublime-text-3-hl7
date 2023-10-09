@@ -16,7 +16,7 @@ class hl7Segment(object):
 	def loadSegmentDefinition(self, version):
 		import json
 
-		with open(f'./lib/definitions/{version}.json') as file:
+		with open('./lib/definitions/' + version + '.json') as file:
 			all_fields = json.load(file)
 			try:
 				self.fields = all_fields[self.code]
