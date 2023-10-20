@@ -169,6 +169,7 @@ class hl7inspectorCommand(sublime_plugin.TextCommand):
 					for component in components:
 						if(component != ""):
 							subComponents =  re.compile(r'(?<!\\)(?:\\\\)*&').split(component)
+							headerWritten = False
 
 							if(len(subComponents) > 1):
 
@@ -188,7 +189,9 @@ class hl7inspectorCommand(sublime_plugin.TextCommand):
 											fieldName = ""
 			
 										if fieldId > 0:
-											body = body + '<br><b style="color:#ffbf00;">' + fieldName + '</b>'
+											if not headerWritten:
+												body = body + '<br><b style="color:#ffbf00;">' + fieldName + '</b>'
+												headerWritten = True
 											try:
 												fieldName = segmentFields[fieldCounter-1]['fields'][componentId-1]
 											except:
@@ -220,7 +223,9 @@ class hl7inspectorCommand(sublime_plugin.TextCommand):
 								if fieldCounter > 0:
 									if totalCircunflex > 0:
 										for tillItem in till:
-											body = body + '<br><b style="color:#ffbf00;">' + fieldName + '</b>'
+											if not headerWritten:
+												body = body + '<br><b style="color:#ffbf00;">' + fieldName + '</b>'
+												headerWritten = True
 											try:
 												fieldName = segmentFields[fieldCounter-1]['fields'][componentId-1]
 											except:
