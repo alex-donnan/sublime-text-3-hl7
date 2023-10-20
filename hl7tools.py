@@ -188,6 +188,7 @@ class hl7inspectorCommand(sublime_plugin.TextCommand):
 											fieldName = ""
 			
 										if fieldId > 0:
+											body = body + '<br><b style="color:#ffbf00;">' + fieldName + '</b>'
 											try:
 												fieldName = segmentFields[fieldCounter-1]['fields'][componentId-1]
 											except:
@@ -219,6 +220,7 @@ class hl7inspectorCommand(sublime_plugin.TextCommand):
 								if fieldCounter > 0:
 									if totalCircunflex > 0:
 										for tillItem in till:
+											body = body + '<br><b style="color:#ffbf00;">' + fieldName + '</b>'
 											try:
 												fieldName = segmentFields[fieldCounter-1]['fields'][componentId-1]
 											except:
