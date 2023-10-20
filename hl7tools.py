@@ -165,11 +165,11 @@ class hl7inspectorCommand(sublime_plugin.TextCommand):
 				if(field != "^~\&"):
 					components =  re.compile(r'(?<!\\)(?:\\\\)*\^').split(field)
 					totalCircunflex = field.count("^")
+					headerWritten = False
 
 					for component in components:
 						if(component != ""):
 							subComponents =  re.compile(r'(?<!\\)(?:\\\\)*&').split(component)
-							headerWritten = False
 
 							if(len(subComponents) > 1):
 
