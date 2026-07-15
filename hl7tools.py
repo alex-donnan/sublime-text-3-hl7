@@ -147,6 +147,7 @@ class hl7inspectorCommand(sublime_plugin.TextCommand):
 		fields = selectedSegment.split('|')
 		fields = re.split(r'(?<!\\)(?:\\\\)*\|', selectedSegment)
 		fieldId = 0
+		repeatId = 1
 		componentId = 1
 		subComponentId = 1
 
@@ -156,25 +157,24 @@ class hl7inspectorCommand(sublime_plugin.TextCommand):
 				segmentCode = segmentItem.code
 				segmentFields = segmentItem.fields['fields']
 
-		header = '<b style="color:#33ccff;">' + header + '</b>'
+		header = '<b style="color:#ee3377;">' + header + '</b>'
 
 		for field in fields:
 
 			if (field != ""):
 
 				if(field != "^~\&"):
-					components =  re.compile(r'(?<!\\)(?:\\\\)*\^').split(field)
-					totalCircunflex = field.count("^")
-					headerWritten = False
+					repeats = re.compile(r'(?<!\\)(?:\\\\)*~').split(field)
+					for repeat in repeats:
+						components =  re.compile(r'(?<!\\)(?:\\\\)*\^').split(repeat)
+						totalCircunflex = repeat.count("^")
+						headerWritten = False
 
-					for component in components:
-						if(component != ""):
-							subComponents =  re.compile(r'(?<!\\)(?:\\\\)*&').split(component)
-
-							if(len(subComponents) > 1):
+						for component in components:
+							if(component != ""):
+								subComponents =  re.compile(r'(?<!\\)(?:\\\\)*&').split(component)
 
 								for subComponent in subComponents:
-
 									if(subComponent != ""):
 										regex = "(<)"
 										filler = "&lt;"
@@ -190,53 +190,25 @@ class hl7inspectorCommand(sublime_plugin.TextCommand):
 			
 										if fieldId > 0:
 											if not headerWritten:
-												body = body + '<br><b style="color:#ffbf00;">' + fieldName + '</b>'
+												body += '<br><b style="color:#55dd33;">* ' + fieldName
+												body += '(~' + str(repeatId) + ')</b>' if len(repeats) > 1 else '</b>'
 												headerWritten = True
 											try:
 												fieldName = segmentFields[fieldCounter-1]['fields'][componentId-1]
 											except:
 												fieldName = fieldName
-											body = body + '<br><b style="color:#33ccff;">' + str(fieldId) + "." + str(componentId) + '</b> - <b style="color:#ffbf00;">' + fieldName + "(" + str(subComponentId) + ")</b> : " + subComponent
 
-									subComponentId = subComponentId + 1
+											body += '<br><b style="color:#33ccff;">' + str(fieldId) + '.' + str(componentId)
+											body += '</b> - <b style="color:#ffbf00;">' + fieldName
+											body += '(&' + str(subComponentId) + ')</b>' if len(subComponents) > 1 else '</b>'
+											body += ': ' + subComponent
+
+									subComponentId += 1
 								subComponentId = 1
-
-							else: 
-								regex = "(<)"
-								filler = "&lt;"
-								component = re.sub(regex, filler, component)
-								regex = "(>)"
-								filler = "&gt;"
-								component = re.sub(regex, filler, component)
-								till = re.compile(r'(?<!\\)(?:\\\\)*~').split(component)
-
-								if segmentCode == 'MSH' and fieldId > 1:
-									fieldCounter = fieldId + 1
-								else:
-									fieldCounter = fieldId
-
-								try:
-									fieldName = segmentFields[fieldCounter-1]['desc']
-								except:
-									fieldName = ""
-
-								if fieldCounter > 0:
-									if totalCircunflex > 0:
-										for tillItem in till:
-											if not headerWritten:
-												body = body + '<br><b style="color:#ffbf00;">' + fieldName + '</b>'
-												headerWritten = True
-											try:
-												fieldName = segmentFields[fieldCounter-1]['fields'][componentId-1]
-											except:
-												fieldName = fieldName										 
-											body = body + '<br><b style="color:#33ccff;">' + str(fieldCounter) + "." + str(componentId) + '</b> - <b style="color:#ffbf00;">' + fieldName + "</b> : " + tillItem
-									else:
-										for tillItem in till:
-											body = body + '<br><b style="color:#33ccff;">' + str(fieldCounter) + '</b> - <b style="color:#ffbf00;">' + fieldName + "</b> : " + tillItem
-
-						componentId = componentId + 1
-					componentId = 1
+							componentId += 1
+						componentId = 1
+						repeatId += 1
+					repeatId = 1
 
 				else:
 					if len(selectedSegment) > 3:
@@ -249,7 +221,7 @@ class hl7inspectorCommand(sublime_plugin.TextCommand):
 		message = header + body
 		message = message.replace("\&", "\&amp;")
 
-		self.view.show_popup(message, on_navigate=print)
+		self.view.show_popup(message, on_navigate=print, max_width=1000)
 		
 
 # Cleans an HL7 message from reduntant information and idents it
